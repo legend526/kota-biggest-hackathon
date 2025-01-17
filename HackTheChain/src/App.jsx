@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './Components/Navbar';
 import FAQs from './Components/FAQs';
 import Home from './Components/Home';
-import Sponsors from './Components/Sponsors';
+import Sponsors from './Components/Sponsors' ;
 import About from './Components/About';
 import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx';
