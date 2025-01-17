@@ -1,0 +1,225 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: 'Orbitron';
+}
+
+.progress-bar {
+  position: absolute;
+  left: 21rem;
+  top: 0;
+  width: 2rem;
+  height: 100%;
+  background-color: black;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid rgb(81, 81, 81);
+}
+
+.colored-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.5s ease;
+  z-index: 2;
+}
+
+.progress-logo {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translateY(0);
+  width: 5rem;
+  height: 5rem;
+  transition: transform 0.5s ease;
+  z-index: 5;
+}
+
+.timeline-event {
+  position: relative;
+  margin-left: 35rem;
+  margin-right: 20rem;
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #00d9ff;
+  z-index: 1;
+  font-family: "Orbitron";
+}
+
+.timeline-event-content {
+  padding: 0.4rem;
+  font-family: "Orbitron";
+}
+
+.timeline-event-title {
+  font-family: "Orbitron";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00d9ff;
+  border-bottom: 1px dashed palegoldenrod;
+  padding-bottom: 1rem;
+}
+
+.timeline-event-date {
+  font-size: 1rem;
+  font-style: italic;
+  color: #00d9ff;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.timeline-event-description {
+  font-size: 1rem;
+  color: #fdfdfdf6;
+}
+
+.timeline-event-connector {
+  position: absolute;
+  left: -13rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13rem;
+  border-top: 0.2rem solid rgb(246, 242, 242);
+}
+
+.timeline-logo {
+  position: relative;
+}
+
+@media (max-width: 1400px) {
+  .timeline-event{
+    margin-left: 25rem;
+  }
+  .progress-bar{
+    left: 10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .timeline-event-title {
+    font-size: 1.5rem;
+  }
+  .timeline-event-date {
+    font-size: 1.2rem;
+  }
+  .timeline-event-description {
+    font-size: 0.9rem;
+  }
+  .timeline-event-connector {
+    left: -10rem;
+    width: 10rem;
+  }
+  .timeline-event{
+    margin-left: 20rem;
+  }
+  .progress-bar{
+    left: 15rem;
+  }
+}
+
+@media (max-width: 848px) {
+  .timeline-event-title {
+    font-size: 1.3rem;
+  }
+  .timeline-event-date {
+    font-size: 1rem;
+  }
+  .timeline-event-description {
+    font-size: 0.85rem;
+  }
+  .timeline-event-connector {
+    left: -5rem;
+    width: 5rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .timeline-event-title {
+    font-size: 1.2rem;
+  }
+  .timeline-event-date {
+    font-size: 0.9rem;
+  }
+  .timeline-event-description {
+    font-size: 0.8rem;
+  }
+  .timeline-event-connector {
+    left: 0rem;
+    width: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-event-title {
+    font-size: 1rem;
+  }
+  .timeline-event-date {
+    font-size: 0.8rem;
+  }
+  .timeline-event-description {
+    font-size: 0.7rem;
+  }
+  .progress-logo {
+    width: 30px;
+    height: 30px;
+  }
+  .progress-bar {
+    width: 5px;
+    z-index: -1000;
+  }
+}
+
+@media (max-width: 1024px) {
+  .progress-bar {
+    left: 5rem;
+  }
+
+  .timeline-event {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+}
+
+@media (max-width: 848px) {
+  .progress-bar {
+    left: 10rem;
+  }
+
+  .timeline-event {
+    margin-left: 15rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .progress-bar {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-event {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .progress-logo {
+    width: 35px;
+    height: 35px;
+  }
+  .progress-bar {
+    width: 15px;
+    z-index: -1000;
+  }
+}

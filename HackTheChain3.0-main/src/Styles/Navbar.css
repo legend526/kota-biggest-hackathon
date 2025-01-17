@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Nova+Square&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+/* Heading Section */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Push icon and navbar to opposite sides */
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #333, #111);
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Red Icon on Left */
+/* .icon {
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  border-radius: 8px;
+  flex-shrink: 0;
+} */
+
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65));
+  font-family: "Schibsted Grotesk", serif;
+  font-weight: 400;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align content to the right */
+  width: 0%; /* Full width */
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+  margin-left: 20%;
+}
+.nav-elements{
+  font-family: "Aclonica", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Logo Styling */
+.logo .dhruv {
+  width: auto;
+  height: 45px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+/* Menu Toggle Button (Mobile) */
+.menu-toggle {
+  cursor: pointer;
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
+/* Menu Items */
+.menu-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items li {
+  position: relative;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu-link:hover {
+  color: #ffcc00;
+  transform: translateY(-3px);
+}
+
+/* Mobile Menu Adjustments */
+@media (max-width: 640px) {
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+  }
+
+  .menu-items.active {
+    display: flex;
+  }
+
+  .menu-items li {
+    margin-bottom: 15px;
+  }
+
+  .menu-link {
+    font-size: 1.2rem;
+  }
+
+  .logo .dhruv {
+    height: 35px;
+  }
+}
+
+/* Smooth Transitions */
+.menu-items {
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-items.sm\\:flex {
+  display: flex;
+}
+
+.sm\\:hidden {
+  display: none;
+}
+
+/* Additional Aesthetics */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: "Schibsted Grotesk", serif;
+}
