@@ -4,14 +4,14 @@ import "../Styles/Ending.css";
 
 const Third = () => {
   return (
-    <div className="min-h-screen ayush text-white relative">
+    <div className="min-h-screen flex flex-col ayush text-white relative bg-gray-900 opacity-55">
       {/* Background Stars */}
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/path/to/your/stars_background_image')] bg-cover z-0"></div>
 
       {/* About Section */}
       <div
         id="about"
-        className="z-10 relative p-6 md:p-20 flex flex-col md:flex-row md:space-x-8 bg-transparent shadow-lg"
+        className="z-10 relative p-6 md:p-20 flex flex-col md:flex-row md:space-x-8 bg-transparent shadow-lg flex-grow mt-20" // Added margin-top (mt-20)
       >
         {/* IIIT Kota Logo */}
         <div className="flex justify-center mb-6 md:mb-0">
@@ -35,9 +35,9 @@ const Third = () => {
         </div>
 
         {/* Pendulum Animation */}
-        <div className="mt-8 md:mt-0 flex justify-center shadow-md">
+        {/* <div className="mt-8 md:mt-0 flex justify-center shadow-md">
           <PendulumAnimation />
-        </div>
+        </div> */}
       </div>
 
       {/* Footer Section */}
@@ -76,10 +76,27 @@ const Third = () => {
               <h4 className="text-pink-400 font-semibold text-shadow-sm">Contact Us</h4>
               <p className="text-sm text-shadow-sm">+91 7014151228</p>
               <p className="text-sm text-shadow-sm">codebase@iiitkota.ac.in</p>
+
+              {/* Social Media Icons */}
+              <div className="flex space-x-4 mt-4">
+                {[{ id: 1, icon: "fab fa-facebook-f" },
+                  { id: 2, icon: "fab fa-twitter" },
+                  { id: 3, icon: "fab fa-instagram" },
+                  { id: 4, icon: "fab fa-linkedin-in" },
+                  { id: 5, icon: "fab fa-github" }].map((social) => (
+                    <a
+                      key={social.id}
+                      href={`#`} // Update the href with the actual link for each platform
+                      className="text-purple-300 hover:text-pink-400 transition duration-200 text-2xl"
+                    >
+                      <i className={social.icon}></i>
+                    </a>
+                  ))}
+              </div>
             </div>
 
             {/* Go to Projects Button */}
-            <div>
+            <div className="mt-4 md:mt-0">
               <a
                 href="#projects"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition duration-200 shadow-md"
@@ -88,6 +105,7 @@ const Third = () => {
               </a>
             </div>
           </div>
+
           {/* Copyright Section */}
           <div className="mt-8 text-center text-gray-500 text-sm text-shadow-sm">
             All rights reserved. © HackTheChain 2.0

@@ -29,7 +29,7 @@ const FAQs = () => {
             onClick={() => toggleFaq(faq.id)}
           >
             <div className="faq-question">
-              <span className="faq-icon">❓</span>
+              <span className="faq-icon">?</span>
               {faq.question}
             </div>
             {activeFaq === faq.id && (
