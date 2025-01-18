@@ -8,23 +8,23 @@ const AnimatedTransition = ({ onAnimationComplete }) => {
 
     useEffect(() => {
         const animationTimeout = setTimeout(() => {
-            setFlickering(true);
-            const flickerInterval = setInterval(() => {
-                setFlickering(prev => !prev);
-            }, 200);
+            // setFlickering(true);
+            // const flickerInterval = setInterval(() => {
+            //     setFlickering(prev => !prev);
+            // }, 200);
 
-            setTimeout(() => {
-                clearInterval(flickerInterval);
-                setFlickering(false);
-                document.getElementById("ui").style.opacity = 0;
+            // setTimeout(() => {
+            //     clearInterval(flickerInterval);
+            //     setFlickering(false);
+            //     document.getElementById("ui").style.opacity = 0;
 
                 setTimeout(() => {
                     setShowNewPage(true);
                     onAnimationComplete(); 
-                }, 500);
-            }, 1200);
+                }, 1000);
 
-        }, 5000);
+
+        }, 8000);
 
         return () => clearTimeout(animationTimeout);
     }, [onAnimationComplete]);
