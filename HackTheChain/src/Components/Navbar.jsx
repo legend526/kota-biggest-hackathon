@@ -17,7 +17,7 @@ const Navbar = () => {
             <img
               src="/pictures/output.png" // Add the correct path to your image
               alt="Hack the Chain Logo"
-              className="w-full h-auto object-cover" // Tailwind classes for styling
+              className="w-full h-auto object-cover" // Tailwind csfdlasses for styling
               style={{
                 maxWidth: '600px', // Custom inline style if needed
                 margin: '0 auto',  // Centering the image
