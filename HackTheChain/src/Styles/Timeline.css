@@ -67,7 +67,7 @@ h1 {
   font-family: "Orbitron";
   font-size: 1.5rem;
   font-weight: bold;
-  color:  #3fef54;
+  color:  #00d3f4;
   border-bottom: 1px dashed palegoldenrod;
   padding-bottom: 1rem;
 }
@@ -75,7 +75,7 @@ h1 {
 .timeline-event-date {
   font-size: 1rem;
   font-style: italic;
-  color:  #3fef54;
+  color:  #00f7ff;
   margin-bottom: 10px;
   padding: 5px;
 }
