@@ -46,7 +46,7 @@ const Third = () => {
           <div className="flex flex-col md:flex-row justify-evenly items-start space-y-6 md:space-y-0">
             {/* Useful Links */}
             <div className="space-y-2">
-              <h4 className="text-pink-400 font-semibold text-shadow-sm">Useful Links</h4>
+              <h4 className="text-pink-400 font-semibold text-shadow-sm">Useful Links : </h4>
               <ul className="space-y-1">
                 <li>
                   <a href="#overview" className="text-purple-300 hover:underline text-shadow-sm">

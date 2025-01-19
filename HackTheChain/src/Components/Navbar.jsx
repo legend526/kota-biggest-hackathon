@@ -13,7 +13,7 @@ const Navbar = () => {
           {/* Hackathon Icons/Logos */}
 
           {/* Image as Content */}
-          <div className="image-container mt-8">
+          <div className="image-container mt-0">
             <img
               src="/pictures/output.png" // Add the correct path to your image
               alt="Hack the Chain Logo"

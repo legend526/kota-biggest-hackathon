@@ -1,13 +1,13 @@
 import React from "react";
 
 const teamData = [
-  { id: 1, name: "Ashmit Singh", imageUrl: "/pictures/ashmit.jpg" },
-  { id: 2, name: "Ayush Kumar", imageUrl: "/pictures/ayushphto.jpg" },
-  { id: 3, name: "Dhruv Tiwari", imageUrl: "/pictures/dhruv.jpg" },
+  { id: 1, name: "Dhruv Tiwari", imageUrl: "/pictures/dhruv.jpg" },
+  { id: 2, name: "Ashmit Singh", imageUrl: "/pictures/ashmit.jpg" },
+  { id: 3, name: "Ayush Kumar", imageUrl: "/pictures/ayushphto.jpg" },
   { id: 4, name: "Yash Aggarwal", imageUrl: "/pictures/yash.jpg" },
   { id: 5, name: "Vinay Kumar", imageUrl: "/pictures/vinay.jpg" },
   { id: 6, name: "Avinesh Rathore", imageUrl: "/pictures/avineshboss.jpg" },
-  { id: 7, name: "Anany Srivastava", imageUrl: "/pictures/ananyboss.jpg" },
+  { id: 7, name: "Anany Srivastava", imageUrl: "/pictures/annay.jpg" },
   { id: 8, name: "Devansh Gupta", imageUrl: "/pictures/devanshboss.jpg" },
   { id: 9, name: "Prateek Singh", imageUrl: "/pictures/prateekboss.jpg" },
   { id: 10, name: "Vansh Nigam", imageUrl: "/pictures/vanshboss.jpg" },

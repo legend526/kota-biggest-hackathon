@@ -47,23 +47,23 @@ const HamburgerMenu = () => {
           isOpen ? "scale-100 opacity-100" : "scale-75 opacity-0 pointer-events-none"
         }`}
       >
-        <ul className="flex flex-col">
-          <li className="px-4 py-2 hover:bg-gray-700">
+        <ul className="flex flex-row">
+          <li className="px-2 py-2 hover:bg-gray-700">
             <a href="#Home" onClick={() => scrollToSection("Home")}>Home</a>
           </li>
-          <li className="px-4 py-2 hover:bg-gray-700">
+          <li className="px-2 py-2 hover:bg-gray-700">
             <a href="#about" onClick={() => scrollToSection("about")}>About</a>
           </li>
           {/* <li className="px-4 py-2 hover:bg-gray-700">
             <a href="#timeline" onClick={() => scrollToSection("timeline")}>Timeline</a>
           </li> */}
-          <li className="px-4 py-2 hover:bg-gray-700">
+          <li className="px-2 py-2 hover:bg-gray-700">
             <a href="#prizes" onClick={() => scrollToSection("prizes")}>Prizes</a>
           </li>
-          <li className="px-4 py-2 hover:bg-gray-700">
+          <li className="px-2 py-2 hover:bg-gray-700">
             <a href="#sponsors" onClick={() => scrollToSection("sponsors")}>Sponsors</a>
           </li>
-          <li className="px-4 py-2 hover:bg-gray-700">
+          <li className="px-2 py-2 hover:bg-gray-700">
             <a href="#FAQs" onClick={() => scrollToSection("FAQs")}>FAQs</a>
           </li>
         </ul>
