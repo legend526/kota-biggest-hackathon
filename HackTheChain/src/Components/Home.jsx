@@ -49,7 +49,7 @@ const Home = () => {
         >
           As part of our Tech-Summit organized by TechKnow Society, join the
           ultimate hackathon for developers of all skill levels! Hack your way
-          to success at HackTheChain 2.0!
+          to success at HackTheChain 3.0!
         </p>
       </div>
 
