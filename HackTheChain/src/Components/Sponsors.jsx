@@ -6,9 +6,7 @@ const Sponsors = () => {
           <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white newfont">Sponsors</h1>
           <p className="text-gray-400 mt-5 text-lg sm:text-xl">
             Today, we bring you the opportunity to collaborate with us on our next endeavor.
-            <a href="#" className="underline ml-1 text-white">
-              Sponsor Us
-            </a>
+           
           </p>
 
           {/* Platinum Sponsor */}
@@ -18,7 +16,7 @@ const Sponsors = () => {
               <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-5 hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid sm:grid-rows-2 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
-                    <img className="h-20" src="./partners/DEVFOLIO.webp" alt="Devfolio Logo" />
+                    <img className="h-20" src="./partners/DEVFOLIO.webp" alt="DEVFOLIO LOGO" />
                   </li>
                   <li className="flex items-center justify-center md:px-10">
                     <img className="h-20" src="./partners/POLYGON.webp" alt="Polygon Logo" />
@@ -39,7 +37,7 @@ const Sponsors = () => {
                     <img src="./partners/solona.png" alt="Solana Logo" />
                   </li>
                   <li className="flex items-center justify-center md:px-10">
-                    <img src="./partners/ethIndia.png" alt="eth Logo" />
+                    <img src="./partners/ethIndia.png" alt="DEVFOLIO LOGO" />
                   </li>
                 </ul>
               </div>
@@ -94,31 +92,6 @@ const Sponsors = () => {
                     </li>
                     <li className="flex items-center justify-center md:px-10">
                       <img src="./partners/verbwire.svg" alt="Verbwire Logo" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* Campus Sponsors */}
-            <section className="relative overflow-hidden">
-              {/* <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
-              {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
-              <div className="max-w-6xl container text-center space-y-8 flex flex-col justify-center items-center">
-                <div className="max-w-lg container space-y-4">
-                  <h2 className="text-4xl font-bold newfont">
-                    Campus Partners
-                  </h2>
-                </div>
-                <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-6 hover:bg-[linear-gradient(rgba(255,63,192,0.6)_-50%,rgba(58,58,58,0.15)_50%)]">
-                  <ul className="grid sm:grid-cols-3 gap-10 md:gap-20 items-center relative overflow-x-hidden">
-                    <li className="flex items-center justify-center md:px-10">
-                      <a href="https://gdsc.community.dev/rajasthan-technical-university-kota/" target="_blank" rel="noopener noreferrer">
-                        <img src="./partners/rtu image.jpg" alt="GDSC RTU Kota" />
-                      </a>
-                    </li>
-                    <li className="flex items-center justify-center md:px-10">
-                      <img src="./partners/amity.png" alt="Cyber Security Amity" />
                     </li>
                   </ul>
                 </div>

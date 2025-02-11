@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #000; */
     color: #fff;
     padding: 40px;
     min-height: 100vh;
@@ -59,7 +58,6 @@
     line-height: 1.6;
 }
 
-/* Hover Effects */
 .title {
     animation: bounce 1s ease-in-out;
 }
@@ -80,7 +78,7 @@
     color: #000;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;

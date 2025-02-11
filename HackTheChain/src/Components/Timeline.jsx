@@ -2,19 +2,20 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/Timeline.css';
 
 const timelineEvents = [
-  { id: 1, title: "Registration", date: "2025-01-10", description: "Registration period for HackTheChain 3.0" },
-  { id: 2, title: "Acceptance Letter rollout", date: "2025-01-20", description: "Mails sent to accepted hackers" },
-  { id: 3, title: "Hacking Hours", date: "2025-02-15", description: "The hackathon period" },
-  { id: 4, title: "Winner Announcement", date: "2025-02-16", description: "Winner Announcement and Closing Ceremony" },
+  { id: 1, title: "Registration", date: "12-02-2025", description: "Registration starts for HackTheChain 3.0" },
+  { id: 2, title: "Round 1 Last Date", date: "16-02-2025", description: "Submissions for Round 1 till 16 Feb 12a.m. midnight" },
+  { id: 3, title: "Round 1 Result", date: "17-02-2025", description: "Round 1 result declaration" },
+  { id: 4, title: "Round 2", date: "21-02-2025", description: "Round 2 started. Submissions till 22th of Feb 7p.m." },
+  { id: 5, title: "Final Result", date: "23-02-2025", description: "Winner Announcement and Closing Ceremony" },
 ];
 
 const findNearestEvent = (events) => {
   const today = new Date();
   let closestEvent = events[0];
-  let closestDiff = Math.abs(new Date(events[0].date) - today);
+  let closestDiff = Math.abs(new Date(events[0].date.split('-').reverse().join('-')) - today);
 
   events.forEach(event => {
-    const eventDate = new Date(event.date);
+    const eventDate = new Date(event.date.split('-').reverse().join('-'));
     const diff = Math.abs(eventDate - today);
     if (diff < closestDiff) {
       closestDiff = diff;
