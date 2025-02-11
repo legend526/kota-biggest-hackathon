@@ -1,70 +1,171 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import { Navigation, Autoplay } from "swiper/modules";
+import "../Styles/OurTeam.css";
 
 const teamData = [
-  { id: 1, name: "Dhruv Tiwari", imageUrl: "/pictures/dhruv.jpg" },
-  { id: 2, name: "Ashmit Singh", imageUrl: "/pictures/ashmit.jpg" },
-  { id: 3, name: "Ayush Kumar", imageUrl: "/pictures/ayushphto.jpg" },
-  { id: 4, name: "Yash Aggarwal", imageUrl: "/pictures/yash.jpg" },
-  { id: 5, name: "Vinay Kumar", imageUrl: "/pictures/vinay.jpg" },
-  { id: 6, name: "Avinesh Rathore", imageUrl: "/pictures/avineshboss.jpg" },
-  { id: 7, name: "Anany Srivastava", imageUrl: "/pictures/annay.jpg" },
-  { id: 8, name: "Devansh Gupta", imageUrl: "/pictures/devanshboss.jpg" },
-  { id: 9, name: "Prateek Singh", imageUrl: "/pictures/prateekboss.jpg" },
-  { id: 10, name: "Vansh Nigam", imageUrl: "/pictures/vanshboss.jpg" },
-  { id: 11, name: "Gopal Patidar", imageUrl: "/pictures/gopalboss.jpg" },
-  { id: 12, name: "Jash Parmar", imageUrl: "/pictures/jashboss.jpg" },
-  { id: 13, name: "Hari Om Meena", imageUrl: "/pictures/hariboss.jpg" },
-  { id: 14, name: "Om", imageUrl: "/pictures/omboss.jpg" }
+  {
+    id: 1,
+    name: "Dhruv Tiwari",
+    imageUrl: "/pictures/dhruv.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 2,
+    name: "Ashmit Singh",
+    imageUrl: "/pictures/ashmit.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 3,
+    name: "Ayush Kumar",
+    imageUrl: "/pictures/ayushphto.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 4,
+    name: "Yash Aggarwal",
+    imageUrl: "/pictures/yash.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 5,
+    name: "Vinay Kumar",
+    imageUrl: "/pictures/vinay.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 6,
+    name: "Avinesh Rathore",
+    imageUrl: "/pictures/avineshboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 7,
+    name: "Anany Srivastava",
+    imageUrl: "/pictures/annay.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 8,
+    name: "Devansh Gupta",
+    imageUrl: "/pictures/devanshboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 9,
+    name: "Prateek Singh",
+    imageUrl: "/pictures/prateekboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 10,
+    name: "Vansh Nigam",
+    imageUrl: "/pictures/vanshboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 11,
+    name: "Gopal Patidar",
+    imageUrl: "/pictures/gopalboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 12,
+    name: "Jash Parmar",
+    imageUrl: "/pictures/jashboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 13,
+    name: "Hari Om Meena",
+    imageUrl: "/pictures/hariboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 14,
+    name: "Om",
+    imageUrl: "/pictures/omboss.jpg",
+    role: "Lead Organiser",
+  },
 ];
 
-const OurTeam = () => {
-  const firstRow = teamData.slice(0, Math.ceil(teamData.length / 2));
-  const secondRow = teamData.slice(Math.ceil(teamData.length / 2));
-
+const TeamCarousel = ({ title, members, perview }) => {
   return (
-    <div className="flex flex-col items-center bg-transparent px-4">
-      <h1 className="text-4xl font-bold text-gray-800 mb-8">OUR TEAM</h1>
-      <div className="space-y-6 w-full max-w-7xl mx-auto overflow-hidden">
-        {/* First row */}
-        <div className="flex flex-wrap justify-center gap-6">
-          {firstRow.map((member) => (
-            <div
-              key={member.id}
-              className="shadow-lg rounded-lg p-4 flex flex-col items-center w-40 sm:w-48 md:w-56 lg:w-64"
-              style={{ background: 'radial-gradient(circle, #fff, #fff, #93c5fd)' }}
-            >
-              <div className="w-24 h-24 border-4 border-blue-500 rounded-full overflow-hidden">
-                <img
-                  src={member.imageUrl}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="mt-4 text-sm font-semibold text-gray-700">{member.name}</p>
+    <div className="team-carousel mb-12 w-full max-w-4xl">
+      <h2
+        className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white text-center mb-6">
+        {title}
+      </h2>
+      <Swiper
+        spaceBetween={20}
+        slidesPerView={perview}
+        navigation={false}
+        loop={true}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        modules={[Navigation, Autoplay]}
+        className="mySwiper"
+      >
+        {members.map((member) => (
+          <SwiperSlide key={member.id} className="text-center rounded-lg">
+            <div className="image-container">
+              <img src={member.imageUrl} alt={member.name} />
             </div>
-          ))}
-        </div>
+            <p className="name">{member.name}</p>
+            <p className="role">{member.role}</p>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
 
-        {/* Second row */}
-        <div className="flex flex-wrap justify-center gap-6">
-          {secondRow.map((member) => (
-            <div
-              key={member.id}
-              className="shadow-lg rounded-lg p-4 flex flex-col items-center w-40 sm:w-48 md:w-56 lg:w-64"
-              style={{ background: 'radial-gradient(circle, #fff, #fff, #93c5fd)' }}
-            >
-              <div className="w-24 h-24 border-4 border-blue-500 rounded-full overflow-hidden">
-                <img
-                  src={member.imageUrl}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <p className="mt-4 text-sm font-semibold text-gray-700">{member.name}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+const OurTeam = () => {
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 493) {
+        setSlidesToShow(2);
+      } else if (window.innerWidth >= 493 && window.innerWidth < 724) {
+        setSlidesToShow(3);
+      } else {
+        setSlidesToShow(4);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const leadOrganisers = teamData.filter(
+    (member) => member.role === "Lead Organiser"
+  );
+  console.log(leadOrganisers);
+  const coreTeamMembers = teamData.filter(
+    (member) => member.role === "Core Team"
+  );
+  console.log(coreTeamMembers);
+  return (
+    <div className="flex flex-col items-center bg-transparent px-4 py-10">
+      <h1
+        className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white text-center mb-10 newfont"
+      >
+        Our Team
+      </h1>
+      <TeamCarousel
+        title="Lead Organisers"
+        members={leadOrganisers}
+        perview={slidesToShow}
+      />
+      <TeamCarousel
+        title="Core Team Members"
+        members={coreTeamMembers}
+        perview={slidesToShow}
+      />
     </div>
   );
 };

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from "react";
 import "../Styles/Domains.css";
 
@@ -69,7 +70,7 @@ const Domains = () => {
 
   return (
     <div className="domains-container">
-      <h1 className="title">DOMAINS</h1>
+      <h1 className="title mb-16 text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white text-center">DOMAINS</h1>
       <div className="domains-grid">
         {domains.map((domain, index) => (
           <div
@@ -107,7 +108,7 @@ const Domains = () => {
               </svg>
             </span>
             <h2 className="heading">{domain.title}</h2>
-            <p>{domain.description}</p>
+            <p className="font-sans">{domain.description}</p>
           </div>
         ))}
       </div>

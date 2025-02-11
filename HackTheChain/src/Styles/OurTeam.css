@@ -1,0 +1,155 @@
+ /* @keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes revolve {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+.animate-revolve {
+  animation: revolve 10s linear infinite;
+}
+
+
+
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ .carousel-container {
+    perspective: 1000px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+  }
+  
+  .carousel-ring {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel-item {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid rgb(72, 255, 148);
+    object-fit: cover;
+  }
+  
+  .carousel-item p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+  } */
+
+
+
+
+ /* Team Member Card */
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121220; /* Dark background for the card */
+  /* border-radius: 16px; */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 220px;
+  height: 300px;
+  margin: auto;
+}
+ 
+/* Green Diagonal Background */
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #35c471;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 1;
+}
+
+/* Image Container */
+.swiper-slide .image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white; /* White border around the image */
+  z-index: 2;
+  position: relative;
+  background-color: #1a1a2e; /* Matches card background */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name and Role */
+.swiper-slide p {
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.swiper-slide .name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 16px;
+}
+
+.swiper-slide .role {
+  font-size: 0.875rem;
+  color: #48ff94; /* Green text for the role */
+  margin-top: 4px;
+}

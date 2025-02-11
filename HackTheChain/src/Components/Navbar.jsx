@@ -1,115 +1,109 @@
-import React, { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
-import "../Styles/Navbar.css";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Menu, X, Edit3 } from "lucide-react";
+import logo from "/pictures/HTC_logo.png";
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Navigation links
+  const navLinks = ["HOME", "ABOUT US", "TIMELINE", "DOMAINS", "STATS", "CONTACT"];
+
+  // Scroll effect to hide/show navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setIsNavbarVisible(false); // Scrolling down
+      } else {
+        setIsNavbarVisible(true); // Scrolling up
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <nav className="bg-slate-950 opacity-75 text-white shadow-lg sticky top-0 z-50 font-mono">
-      <div className="container mx-auto px-4 flex items-center justify-between h-20">
-        {/* Left Section: Icons/Logo */}
-        <div className="flex items-center space-x-4">
-          {/* Hackathon Icons/Logos */}
+    <motion.nav
+      className={`bg-[#0E201C] text-white px-16 py-2 flex items-center justify-between fixed top-0 left-0 w-full z-50 shadow-lg transition-transform duration-300 ${
+        isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
+      {/* Logo with Image */}
+      <motion.div  className="flex items-center"
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      onHoverStart={() => console.log('hover started!')}>
+        <img src={logo} alt="Logo" className="h-16"/>
+      </motion.div>
 
-          {/* Image as Content */}
-          <div className="image-container mt-0">
-            <img
-              src="/pictures/output.png" // Add the correct path to your image
-              alt="Hack the Chain Logo"
-              className="w-full h-auto object-cover" // Tailwind csfdlasses for styling
+      {/* Desktop Links */}
+      <div className="hidden md:flex space-x-14 font-roboto text-base font-bold">
+        {navLinks.map((link, index) => (
+          <motion.a
+            key={index}
+            href={`#${link.toLowerCase().replace(/ /g, "-")}`}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="relative group text-white hover:text-green-500 transition duration-300"
+          >
+            {link}
+            {/* Diagonal Line Effect */}
+            <span className="absolute top-0 left-0 w-full h-[2px] bg-green-500 scale-0 group-hover:scale-100 origin-top-left transform transition-transform duration-300"></span>
+          </motion.a>
+        ))}
+      </div>
 
-              style={{
-                maxWidth: '600px', // Custom inline style if needed
-                margin: '0 auto',  // Centering the image
-                height: '90px',
-                width: '190px',
-              }}
-            />
-          </div>
-          <span className="text-xl font-bold">HackTheChain3.0</span>
-        </div>
+      {/* Hexagon Sign In Button */}
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="relative flex items-center px-6 py-2 text-lg font-bold text-gray-300 bg-green-600 border-2 border-green-400 shadow-md hover:text-white hover:bg-green-700 transition duration-300 clip-hexagon"
+      >
+        <Edit3 className="w-5 h-5 mr-2" />
+        Download Brochure
+      </motion.button>
 
-        {/* Right Section: Navigation */}
-        <div className="hidden md:flex space-x-6 items-center text-xl">
-          <a
-            href="#home"
-            className="hover:text-yellow-400 transition duration-300 "
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="hover:text-yellow-400 transition duration-300"
-          >
-            About
-          </a>
-          <a
-            href="#schedule"
-            className="hover:text-yellow-400 transition duration-300"
-          >
-            Schedule
-          </a>
-          <a
-            href="#sponsors"
-            className="hover:text-yellow-400 transition duration-300"
-          >
-            Sponsors
-          </a>
-          <a
-            href="#contact"
-            className="hover:text-yellow-400 transition duration-300"
-          >
-            Contact
-          </a>
-        </div>
-
-        {/* Mobile Menu Toggle */}
+      {/* Mobile Menu Toggle */}
+      <div className="md:hidden flex items-center">
         <button
-          className="md:hidden text-2xl focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="focus:outline-none"
         >
-          {menuOpen ? <FiX /> : <FiMenu />}
+          {isMenuOpen ? (
+            <X className="text-white w-6 h-6" />
+          ) : (
+            <Menu className="text-white w-6 h-6" />
+          )}
         </button>
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-gray-800 text-white nav-elements">
-          <a
-            href="#home"
-            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
-          >
-            About
-          </a>
-          <a
-            href="#schedule"
-            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
-          >
-            Schedule
-          </a>
-          <a
-            href="#sponsors"
-            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
-          >
-            Sponsors
-          </a>
-          <a
-            href="#contact"
-            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
-          >
-            Contact
-          </a>
-        </div>
+      {isMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          className="absolute top-full left-0 w-full bg-gray-800 text-white flex flex-col space-y-4 py-4 px-6 shadow-lg"
+        >
+          {navLinks.map((link, index) => (
+            <a
+              key={index}
+              href={`#${link.toLowerCase().replace(/ /g, "-")}`}
+              className="relative group text-white hover:text-green-500 transition duration-300"
+            >
+              {link}
+              {/* Diagonal Line Effect */}
+              <span className="absolute top-0 left-0 w-full h-[2px] bg-green-500 scale-0 group-hover:scale-100 origin-top-left transform transition-transform duration-300"></span>
+            </a>
+          ))}
+        </motion.div>
       )}
-    </nav>
+    </motion.nav>
   );
-};
-
-export default Navbar;
+}

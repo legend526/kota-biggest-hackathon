@@ -14,17 +14,13 @@
   } */
 
   @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-   
-  @font-face {
-    font-family: 'GamingFont';
-    src: url('/fonts/GamingFont.woff2') format('woff2');
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Medula+One&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ultra&display=swap');
   .ayush .text {
-    font-family: 'Roboto', monospace;
-    font-size: 1rem;
+    font-family: 'Ultra';
+    font-size: 2rem;
+    font-weight: 100;
     color: white;
   }
 
@@ -50,13 +46,13 @@ div {
     color: #fff;
     line-height: 8rem;
     opacity: 0;
-    font-family: monospace;
+    font-family: 'Ultra';
     transform: translate(-50%, -50%);
     mix-blend-mode: screen;
     font-weight: 800;
   }
   #ui .text:nth-child(1) {
-    color:#03fdfd;
+    color:#45F882;
     -webkit-clip-path: polygon(0% 0%, 0% 50%, 10% 50%);
             clip-path: polygon(0% 0%, 0% 50%, 10% 50%);
     transform-origin: -34% -19%;
@@ -100,7 +96,7 @@ div {
     }
   }
   #ui .text:nth-child(2) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 0%, 10% 0%, 10% 50%);
             clip-path: polygon(0% 0%, 10% 0%, 10% 50%);
     transform-origin: -5% -16%;
@@ -144,7 +140,7 @@ div {
     }
   }
   #ui .text:nth-child(3) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 0%, 10% 50%, 20% 50%);
             clip-path: polygon(10% 0%, 10% 50%, 20% 50%);
     transform-origin: -38% 44%;
@@ -188,7 +184,7 @@ div {
     }
   }
   #ui .text:nth-child(4) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 0%, 20% 0%, 20% 50%);
             clip-path: polygon(10% 0%, 20% 0%, 20% 50%);
     transform-origin: 26% 17%;
@@ -232,7 +228,7 @@ div {
     }
   }
   #ui .text:nth-child(5) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 0%, 20% 50%, 30% 50%);
             clip-path: polygon(20% 0%, 20% 50%, 30% 50%);
     transform-origin: -21% 14%;
@@ -276,7 +272,7 @@ div {
     }
   }
   #ui .text:nth-child(6) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 0%, 30% 0%, 30% 50%);
             clip-path: polygon(20% 0%, 30% 0%, 30% 50%);
     transform-origin: 21% 20%;
@@ -320,7 +316,7 @@ div {
     }
   }
   #ui .text:nth-child(7) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 0%, 30% 50%, 40% 50%);
             clip-path: polygon(30% 0%, 30% 50%, 40% 50%);
     transform-origin: 39% 35%;
@@ -364,7 +360,7 @@ div {
     }
   }
   #ui .text:nth-child(8) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 0%, 40% 0%, 40% 50%);
             clip-path: polygon(30% 0%, 40% 0%, 40% 50%);
     transform-origin: 72% 21%;
@@ -408,7 +404,7 @@ div {
     }
   }
   #ui .text:nth-child(9) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 0%, 40% 50%, 50% 50%);
             clip-path: polygon(40% 0%, 40% 50%, 50% 50%);
     transform-origin: 47% 28%;
@@ -452,7 +448,7 @@ div {
     }
   }
   #ui .text:nth-child(10) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 0%, 50% 0%, 50% 50%);
             clip-path: polygon(40% 0%, 50% 0%, 50% 50%);
     transform-origin: 13% -21%;
@@ -496,7 +492,7 @@ div {
     }
   }
   #ui .text:nth-child(11) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 0%, 50% 50%, 60% 50%);
             clip-path: polygon(50% 0%, 50% 50%, 60% 50%);
     transform-origin: 33% -49%;
@@ -540,7 +536,7 @@ div {
     }
   }
   #ui .text:nth-child(12) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 0%, 60% 0%, 60% 50%);
             clip-path: polygon(50% 0%, 60% 0%, 60% 50%);
     transform-origin: 8% -40%;
@@ -584,7 +580,7 @@ div {
     }
   }
   #ui .text:nth-child(13) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 0%, 60% 50%, 70% 50%);
             clip-path: polygon(60% 0%, 60% 50%, 70% 50%);
     transform-origin: 67% -10%;
@@ -628,7 +624,7 @@ div {
     }
   }
   #ui .text:nth-child(14) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 0%, 70% 0%, 70% 50%);
             clip-path: polygon(60% 0%, 70% 0%, 70% 50%);
     transform-origin: 93% -14%;
@@ -672,7 +668,7 @@ div {
     }
   }
   #ui .text:nth-child(15) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 0%, 70% 50%, 80% 50%);
             clip-path: polygon(70% 0%, 70% 50%, 80% 50%);
     transform-origin: 80% 4%;
@@ -716,7 +712,7 @@ div {
     }
   }
   #ui .text:nth-child(16) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 0%, 80% 0%, 80% 50%);
             clip-path: polygon(70% 0%, 80% 0%, 80% 50%);
     transform-origin: 57% 6%;
@@ -760,7 +756,7 @@ div {
     }
   }
   #ui .text:nth-child(17) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 0%, 80% 50%, 90% 50%);
             clip-path: polygon(80% 0%, 80% 50%, 90% 50%);
     transform-origin: 120% -1%;
@@ -804,7 +800,7 @@ div {
     }
   }
   #ui .text:nth-child(18) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 0%, 90% 0%, 90% 50%);
             clip-path: polygon(80% 0%, 90% 0%, 90% 50%);
     transform-origin: 90% -22%;
@@ -848,7 +844,7 @@ div {
     }
   }
   #ui .text:nth-child(19) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 0%, 90% 50%, 100% 50%);
             clip-path: polygon(90% 0%, 90% 50%, 100% 50%);
     transform-origin: 46% 3%;
@@ -892,7 +888,7 @@ div {
     }
   }
   #ui .text:nth-child(20) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 0%, 100% 0%, 100% 50%);
             clip-path: polygon(90% 0%, 100% 0%, 100% 50%);
     transform-origin: 139% -5%;
@@ -936,7 +932,7 @@ div {
     }
   }
   #ui .text:nth-child(21) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 50%, 0% 100%, 10% 100%);
             clip-path: polygon(0% 50%, 0% 100%, 10% 100%);
     transform-origin: 37% 61%;
@@ -980,7 +976,7 @@ div {
     }
   }
   #ui .text:nth-child(22) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 50%, 10% 50%, 10% 100%);
             clip-path: polygon(0% 50%, 10% 50%, 10% 100%);
     transform-origin: 38% 74%;
@@ -1024,7 +1020,7 @@ div {
     }
   }
   #ui .text:nth-child(23) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 50%, 10% 100%, 20% 100%);
             clip-path: polygon(10% 50%, 10% 100%, 20% 100%);
     transform-origin: -12% 72%;
@@ -1068,7 +1064,7 @@ div {
     }
   }
   #ui .text:nth-child(24) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 50%, 20% 50%, 20% 100%);
             clip-path: polygon(10% 50%, 20% 50%, 20% 100%);
     transform-origin: -23% 38%;
@@ -1112,7 +1108,7 @@ div {
     }
   }
   #ui .text:nth-child(25) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 50%, 20% 100%, 30% 100%);
             clip-path: polygon(20% 50%, 20% 100%, 30% 100%);
     transform-origin: 52% 75%;
@@ -1156,7 +1152,7 @@ div {
     }
   }
   #ui .text:nth-child(26) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 50%, 30% 50%, 30% 100%);
             clip-path: polygon(20% 50%, 30% 50%, 30% 100%);
     transform-origin: -26% 99%;
@@ -1200,7 +1196,7 @@ div {
     }
   }
   #ui .text:nth-child(27) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 50%, 30% 100%, 40% 100%);
             clip-path: polygon(30% 50%, 30% 100%, 40% 100%);
     transform-origin: 49% 51%;
@@ -1244,7 +1240,7 @@ div {
     }
   }
   #ui .text:nth-child(28) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 50%, 40% 50%, 40% 100%);
             clip-path: polygon(30% 50%, 40% 50%, 40% 100%);
     transform-origin: 13% 75%;
@@ -1288,7 +1284,7 @@ div {
     }
   }
   #ui .text:nth-child(29) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 50%, 40% 100%, 50% 100%);
             clip-path: polygon(40% 50%, 40% 100%, 50% 100%);
     transform-origin: 66% 49%;
@@ -1332,7 +1328,7 @@ div {
     }
   }
   #ui .text:nth-child(30) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 50%, 50% 50%, 50% 100%);
             clip-path: polygon(40% 50%, 50% 50%, 50% 100%);
     transform-origin: 18% 41%;
@@ -1376,7 +1372,7 @@ div {
     }
   }
   #ui .text:nth-child(31) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 50%, 50% 100%, 60% 100%);
             clip-path: polygon(50% 50%, 50% 100%, 60% 100%);
     transform-origin: 75% 70%;
@@ -1420,7 +1416,7 @@ div {
     }
   }
   #ui .text:nth-child(32) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 50%, 60% 50%, 60% 100%);
             clip-path: polygon(50% 50%, 60% 50%, 60% 100%);
     transform-origin: 3% 29%;
@@ -1464,7 +1460,7 @@ div {
     }
   }
   #ui .text:nth-child(33) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 50%, 60% 100%, 70% 100%);
             clip-path: polygon(60% 50%, 60% 100%, 70% 100%);
     transform-origin: 99% 74%;
@@ -1508,7 +1504,7 @@ div {
     }
   }
   #ui .text:nth-child(34) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 50%, 70% 50%, 70% 100%);
             clip-path: polygon(60% 50%, 70% 50%, 70% 100%);
     transform-origin: 13% 83%;
@@ -1552,7 +1548,7 @@ div {
     }
   }
   #ui .text:nth-child(35) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 50%, 70% 100%, 80% 100%);
             clip-path: polygon(70% 50%, 70% 100%, 80% 100%);
     transform-origin: 30% 12%;
@@ -1596,7 +1592,7 @@ div {
     }
   }
   #ui .text:nth-child(36) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 50%, 80% 50%, 80% 100%);
             clip-path: polygon(70% 50%, 80% 50%, 80% 100%);
     transform-origin: 96% 56%;
@@ -1640,7 +1636,7 @@ div {
     }
   }
   #ui .text:nth-child(37) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 50%, 80% 100%, 90% 100%);
             clip-path: polygon(80% 50%, 80% 100%, 90% 100%);
     transform-origin: 65% 96%;
@@ -1684,7 +1680,7 @@ div {
     }
   }
   #ui .text:nth-child(38) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 50%, 90% 50%, 90% 100%);
             clip-path: polygon(80% 50%, 90% 50%, 90% 100%);
     transform-origin: 85% 64%;
@@ -1728,7 +1724,7 @@ div {
     }
   }
   #ui .text:nth-child(39) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 50%, 90% 100%, 100% 100%);
             clip-path: polygon(90% 50%, 90% 100%, 100% 100%);
     transform-origin: 107% 41%;
@@ -1772,7 +1768,7 @@ div {
     }
   }
   #ui .text:nth-child(40) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 50%, 100% 50%, 100% 100%);
             clip-path: polygon(90% 50%, 100% 50%, 100% 100%);
     transform-origin: 85% 8%;
@@ -1816,7 +1812,7 @@ div {
     }
   }
   #ui .text:nth-child(41) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 100%, 0% 150%, 10% 150%);
             clip-path: polygon(0% 100%, 0% 150%, 10% 150%);
     transform-origin: -42% 70%;
@@ -1860,7 +1856,7 @@ div {
     }
   }
   #ui .text:nth-child(42) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 100%, 10% 100%, 10% 150%);
             clip-path: polygon(0% 100%, 10% 100%, 10% 150%);
     transform-origin: 27% 53%;
@@ -1904,7 +1900,7 @@ div {
     }
   }
   #ui .text:nth-child(43) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 100%, 10% 150%, 20% 150%);
             clip-path: polygon(10% 100%, 10% 150%, 20% 150%);
     transform-origin: -6% 86%;
@@ -1948,7 +1944,7 @@ div {
     }
   }
   #ui .text:nth-child(44) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 100%, 20% 100%, 20% 150%);
             clip-path: polygon(10% 100%, 20% 100%, 20% 150%);
     transform-origin: 21% 122%;
@@ -1992,7 +1988,7 @@ div {
     }
   }
   #ui .text:nth-child(45) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 100%, 20% 150%, 30% 150%);
             clip-path: polygon(20% 100%, 20% 150%, 30% 150%);
     transform-origin: 1% 77%;
@@ -2036,7 +2032,7 @@ div {
     }
   }
   #ui .text:nth-child(46) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 100%, 30% 100%, 30% 150%);
             clip-path: polygon(20% 100%, 30% 100%, 30% 150%);
     transform-origin: 28% 81%;
@@ -2080,7 +2076,7 @@ div {
     }
   }
   #ui .text:nth-child(47) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 100%, 30% 150%, 40% 150%);
             clip-path: polygon(30% 100%, 30% 150%, 40% 150%);
     transform-origin: 42% 82%;
@@ -2124,7 +2120,7 @@ div {
     }
   }
   #ui .text:nth-child(48) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 100%, 40% 100%, 40% 150%);
             clip-path: polygon(30% 100%, 40% 100%, 40% 150%);
     transform-origin: 24% 132%;
@@ -2168,7 +2164,7 @@ div {
     }
   }
   #ui .text:nth-child(49) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 100%, 40% 150%, 50% 150%);
             clip-path: polygon(40% 100%, 40% 150%, 50% 150%);
     transform-origin: 53% 133%;
@@ -2212,7 +2208,7 @@ div {
     }
   }
   #ui .text:nth-child(50) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 100%, 50% 100%, 50% 150%);
             clip-path: polygon(40% 100%, 50% 100%, 50% 150%);
     transform-origin: 82% 73%;
@@ -2256,7 +2252,7 @@ div {
     }
   }
   #ui .text:nth-child(51) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 100%, 50% 150%, 60% 150%);
             clip-path: polygon(50% 100%, 50% 150%, 60% 150%);
     transform-origin: 9% 76%;
@@ -2300,7 +2296,7 @@ div {
     }
   }
   #ui .text:nth-child(52) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 100%, 60% 100%, 60% 150%);
             clip-path: polygon(50% 100%, 60% 100%, 60% 150%);
     transform-origin: 6% 119%;
@@ -2344,7 +2340,7 @@ div {
     }
   }
   #ui .text:nth-child(53) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 100%, 60% 150%, 70% 150%);
             clip-path: polygon(60% 100%, 60% 150%, 70% 150%);
     transform-origin: 38% 122%;
@@ -2388,7 +2384,7 @@ div {
     }
   }
   #ui .text:nth-child(54) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 100%, 70% 100%, 70% 150%);
             clip-path: polygon(60% 100%, 70% 100%, 70% 150%);
     transform-origin: 46% 112%;
@@ -2432,7 +2428,7 @@ div {
     }
   }
   #ui .text:nth-child(55) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 100%, 70% 150%, 80% 150%);
             clip-path: polygon(70% 100%, 70% 150%, 80% 150%);
     transform-origin: 27% 71%;
@@ -2476,7 +2472,7 @@ div {
     }
   }
   #ui .text:nth-child(56) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 100%, 80% 100%, 80% 150%);
             clip-path: polygon(70% 100%, 80% 100%, 80% 150%);
     transform-origin: 40% 138%;
@@ -2520,7 +2516,7 @@ div {
     }
   }
   #ui .text:nth-child(57) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 100%, 80% 150%, 90% 150%);
             clip-path: polygon(80% 100%, 80% 150%, 90% 150%);
     transform-origin: 104% 56%;
@@ -2564,7 +2560,7 @@ div {
     }
   }
   #ui .text:nth-child(58) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 100%, 90% 100%, 90% 150%);
             clip-path: polygon(80% 100%, 90% 100%, 90% 150%);
     transform-origin: 38% 53%;
@@ -2608,7 +2604,7 @@ div {
     }
   }
   #ui .text:nth-child(59) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 100%, 90% 150%, 100% 150%);
             clip-path: polygon(90% 100%, 90% 150%, 100% 150%);
     transform-origin: 60% 123%;
@@ -2652,7 +2648,7 @@ div {
     }
   }
   #ui .text:nth-child(60) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 100%, 100% 100%, 100% 150%);
             clip-path: polygon(90% 100%, 100% 100%, 100% 150%);
     transform-origin: 57% 119%;
@@ -2696,7 +2692,7 @@ div {
     }
   }
   #ui .text:nth-child(61) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 150%, 0% 200%, 10% 200%);
             clip-path: polygon(0% 150%, 0% 200%, 10% 200%);
     transform-origin: -31% 180%;
@@ -2740,7 +2736,7 @@ div {
     }
   }
   #ui .text:nth-child(62) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 150%, 10% 150%, 10% 200%);
             clip-path: polygon(0% 150%, 10% 150%, 10% 200%);
     transform-origin: 10% 126%;
@@ -2784,7 +2780,7 @@ div {
     }
   }
   #ui .text:nth-child(63) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 150%, 10% 200%, 20% 200%);
             clip-path: polygon(10% 150%, 10% 200%, 20% 200%);
     transform-origin: -35% 162%;
@@ -2828,7 +2824,7 @@ div {
     }
   }
   #ui .text:nth-child(64) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 150%, 20% 150%, 20% 200%);
             clip-path: polygon(10% 150%, 20% 150%, 20% 200%);
     transform-origin: -18% 180%;
@@ -2872,7 +2868,7 @@ div {
     }
   }
   #ui .text:nth-child(65) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 150%, 20% 200%, 30% 200%);
             clip-path: polygon(20% 150%, 20% 200%, 30% 200%);
     transform-origin: -6% 157%;
@@ -2916,7 +2912,7 @@ div {
     }
   }
   #ui .text:nth-child(66) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 150%, 30% 150%, 30% 200%);
             clip-path: polygon(20% 150%, 30% 150%, 30% 200%);
     transform-origin: 25% 126%;
@@ -2960,7 +2956,7 @@ div {
     }
   }
   #ui .text:nth-child(67) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 150%, 30% 200%, 40% 200%);
             clip-path: polygon(30% 150%, 30% 200%, 40% 200%);
     transform-origin: 69% 137%;
@@ -3004,7 +3000,7 @@ div {
     }
   }
   #ui .text:nth-child(68) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 150%, 40% 150%, 40% 200%);
             clip-path: polygon(30% 150%, 40% 150%, 40% 200%);
     transform-origin: 65% 118%;
@@ -3048,7 +3044,7 @@ div {
     }
   }
   #ui .text:nth-child(69) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 150%, 40% 200%, 50% 200%);
             clip-path: polygon(40% 150%, 40% 200%, 50% 200%);
     transform-origin: 47% 197%;
@@ -3092,7 +3088,7 @@ div {
     }
   }
   #ui .text:nth-child(70) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 150%, 50% 150%, 50% 200%);
             clip-path: polygon(40% 150%, 50% 150%, 50% 200%);
     transform-origin: 50% 155%;
@@ -3136,7 +3132,7 @@ div {
     }
   }
   #ui .text:nth-child(71) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 150%, 50% 200%, 60% 200%);
             clip-path: polygon(50% 150%, 50% 200%, 60% 200%);
     transform-origin: 94% 122%;
@@ -3180,7 +3176,7 @@ div {
     }
   }
   #ui .text:nth-child(72) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 150%, 60% 150%, 60% 200%);
             clip-path: polygon(50% 150%, 60% 150%, 60% 200%);
     transform-origin: 73% 193%;
@@ -3224,7 +3220,7 @@ div {
     }
   }
   #ui .text:nth-child(73) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 150%, 60% 200%, 70% 200%);
             clip-path: polygon(60% 150%, 60% 200%, 70% 200%);
     transform-origin: 31% 148%;
@@ -3268,7 +3264,7 @@ div {
     }
   }
   #ui .text:nth-child(74) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 150%, 70% 150%, 70% 200%);
             clip-path: polygon(60% 150%, 70% 150%, 70% 200%);
     transform-origin: 73% 115%;
@@ -3312,7 +3308,7 @@ div {
     }
   }
   #ui .text:nth-child(75) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 150%, 70% 200%, 80% 200%);
             clip-path: polygon(70% 150%, 70% 200%, 80% 200%);
     transform-origin: 39% 183%;
@@ -3356,7 +3352,7 @@ div {
     }
   }
   #ui .text:nth-child(76) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 150%, 80% 150%, 80% 200%);
             clip-path: polygon(70% 150%, 80% 150%, 80% 200%);
     transform-origin: 110% 125%;
@@ -3400,7 +3396,7 @@ div {
     }
   }
   #ui .text:nth-child(77) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 150%, 80% 200%, 90% 200%);
             clip-path: polygon(80% 150%, 80% 200%, 90% 200%);
     transform-origin: 106% 198%;
@@ -3444,7 +3440,7 @@ div {
     }
   }
   #ui .text:nth-child(78) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 150%, 90% 150%, 90% 200%);
             clip-path: polygon(80% 150%, 90% 150%, 90% 200%);
     transform-origin: 62% 180%;
@@ -3488,7 +3484,7 @@ div {
     }
   }
   #ui .text:nth-child(79) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 150%, 90% 200%, 100% 200%);
             clip-path: polygon(90% 150%, 90% 200%, 100% 200%);
     transform-origin: 120% 141%;
@@ -3532,7 +3528,7 @@ div {
     }
   }
   #ui .text:nth-child(80) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 150%, 100% 150%, 100% 200%);
             clip-path: polygon(90% 150%, 100% 150%, 100% 200%);
     transform-origin: 118% 136%;
@@ -3576,7 +3572,7 @@ div {
     }
   }
   #ui .text:nth-child(81) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 200%, 0% 250%, 10% 250%);
             clip-path: polygon(0% 200%, 0% 250%, 10% 250%);
     transform-origin: -24% 246%;
@@ -3620,7 +3616,7 @@ div {
     }
   }
   #ui .text:nth-child(82) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 200%, 10% 200%, 10% 250%);
             clip-path: polygon(0% 200%, 10% 200%, 10% 250%);
     transform-origin: 15% 237%;
@@ -3664,7 +3660,7 @@ div {
     }
   }
   #ui .text:nth-child(83) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 200%, 10% 250%, 20% 250%);
             clip-path: polygon(10% 200%, 10% 250%, 20% 250%);
     transform-origin: 50% 190%;
@@ -3708,7 +3704,7 @@ div {
     }
   }
   #ui .text:nth-child(84) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(10% 200%, 20% 200%, 20% 250%);
             clip-path: polygon(10% 200%, 20% 200%, 20% 250%);
     transform-origin: 25% 219%;
@@ -3752,7 +3748,7 @@ div {
     }
   }
   #ui .text:nth-child(85) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 200%, 20% 250%, 30% 250%);
             clip-path: polygon(20% 200%, 20% 250%, 30% 250%);
     transform-origin: 6% 179%;
@@ -3796,7 +3792,7 @@ div {
     }
   }
   #ui .text:nth-child(86) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(20% 200%, 30% 200%, 30% 250%);
             clip-path: polygon(20% 200%, 30% 200%, 30% 250%);
     transform-origin: 40% 185%;
@@ -3840,7 +3836,7 @@ div {
     }
   }
   #ui .text:nth-child(87) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 200%, 30% 250%, 40% 250%);
             clip-path: polygon(30% 200%, 30% 250%, 40% 250%);
     transform-origin: 58% 248%;
@@ -3884,7 +3880,7 @@ div {
     }
   }
   #ui .text:nth-child(88) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(30% 200%, 40% 200%, 40% 250%);
             clip-path: polygon(30% 200%, 40% 200%, 40% 250%);
     transform-origin: -15% 221%;
@@ -3928,7 +3924,7 @@ div {
     }
   }
   #ui .text:nth-child(89) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 200%, 40% 250%, 50% 250%);
             clip-path: polygon(40% 200%, 40% 250%, 50% 250%);
     transform-origin: 33% 186%;
@@ -3972,7 +3968,7 @@ div {
     }
   }
   #ui .text:nth-child(90) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(40% 200%, 50% 200%, 50% 250%);
             clip-path: polygon(40% 200%, 50% 200%, 50% 250%);
     transform-origin: 56% 190%;
@@ -4016,7 +4012,7 @@ div {
     }
   }
   #ui .text:nth-child(91) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 200%, 50% 250%, 60% 250%);
             clip-path: polygon(50% 200%, 50% 250%, 60% 250%);
     transform-origin: 46% 211%;
@@ -4060,7 +4056,7 @@ div {
     }
   }
   #ui .text:nth-child(92) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(50% 200%, 60% 200%, 60% 250%);
             clip-path: polygon(50% 200%, 60% 200%, 60% 250%);
     transform-origin: 38% 236%;
@@ -4104,7 +4100,7 @@ div {
     }
   }
   #ui .text:nth-child(93) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 200%, 60% 250%, 70% 250%);
             clip-path: polygon(60% 200%, 60% 250%, 70% 250%);
     transform-origin: 83% 165%;
@@ -4148,7 +4144,7 @@ div {
     }
   }
   #ui .text:nth-child(94) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(60% 200%, 70% 200%, 70% 250%);
             clip-path: polygon(60% 200%, 70% 200%, 70% 250%);
     transform-origin: 79% 202%;
@@ -4192,7 +4188,7 @@ div {
     }
   }
   #ui .text:nth-child(95) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 200%, 70% 250%, 80% 250%);
             clip-path: polygon(70% 200%, 70% 250%, 80% 250%);
     transform-origin: 79% 174%;
@@ -4236,7 +4232,7 @@ div {
     }
   }
   #ui .text:nth-child(96) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(70% 200%, 80% 200%, 80% 250%);
             clip-path: polygon(70% 200%, 80% 200%, 80% 250%);
     transform-origin: 58% 205%;
@@ -4280,7 +4276,7 @@ div {
     }
   }
   #ui .text:nth-child(97) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 200%, 80% 250%, 90% 250%);
             clip-path: polygon(80% 200%, 80% 250%, 90% 250%);
     transform-origin: 52% 214%;
@@ -4324,7 +4320,7 @@ div {
     }
   }
   #ui .text:nth-child(98) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(80% 200%, 90% 200%, 90% 250%);
             clip-path: polygon(80% 200%, 90% 200%, 90% 250%);
     transform-origin: 85% 176%;
@@ -4368,7 +4364,7 @@ div {
     }
   }
   #ui .text:nth-child(99) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 200%, 90% 250%, 100% 250%);
             clip-path: polygon(90% 200%, 90% 250%, 100% 250%);
     transform-origin: 109% 162%;
@@ -4412,7 +4408,7 @@ div {
     }
   }
   #ui .text:nth-child(100) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(90% 200%, 100% 200%, 100% 250%);
             clip-path: polygon(90% 200%, 100% 200%, 100% 250%);
     transform-origin: 108% 222%;
@@ -4456,7 +4452,7 @@ div {
     }
   }
   #ui .text:nth-child(101) {
-    color: #03fdfd;
+    color: #45F882;
     -webkit-clip-path: polygon(0% 250%, 0% 300%, 10% 300%);
             clip-path: polygon(0% 250%, 0% 300%, 10% 300%);
     transform-origin: -9% 264%;

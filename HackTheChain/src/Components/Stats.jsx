@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import "../Styles/Stats.css";
+
 function Number({ n, startAnimation }) {
   const { number } = useSpring({
     from: { number: 0 },
@@ -45,7 +46,7 @@ const First = () => {
 
   return (
     <div className="ayush font-sans text-white py-40">
-      <div className="ayush container  mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((stat, index) => (
           <StatCard key={index} title={stat.title} value={stat.value} description={stat.description} />
         ))}
@@ -65,17 +66,17 @@ function StatCard({ title, value, description }) {
   });
 
   return (
-    <div ref={ref} className="ayush text-center">
-      <h2 className="text-4xl font-medium mb-2">
-        <span className='number text-4xl bg-clip-text text-transparent leading-normal font-semibold'>
+    <div ref={ref} className="relative text-center p-6 border border-green-400 rounded-2xl shadow-lg bg-gray-900 bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 transform hover:scale-105 backdrop-blur-xl">
+      <div className="absolute inset-0 border-2 border-green-500 rounded-2xl animate-pulse"></div>
+      <h2 className="text-4xl font-medium mb-2 relative">
+        <span className='number text-4xl bg-clip-text text-transparent leading-normal font-semibold text-green-300 drop-shadow-lg'>
           <Number n={value} startAnimation={hasAnimated} />+
         </span>
       </h2>
-      <p className="text-xl font-medium ayush  mb-1">{title}</p>
-      <p className="text-white font-semibold ayush" style={{ textShadow: '0 0 0.2px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.5)' }}>
-  {description}
-</p>
-
+      <p className="text-xl font-medium text-green-200 mb-1 relative">{title}</p>
+      <p className="text-white font-semibold relative text-sm opacity-80 px-2" style={{ textShadow: '0 0 5px rgba(0, 255, 0, 0.7), 0 0 15px rgba(0, 255, 0, 0.5)' }}>
+        {description}
+      </p>
     </div>
   );
 }
