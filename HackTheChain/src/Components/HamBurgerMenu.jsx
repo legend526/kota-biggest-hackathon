@@ -23,7 +23,7 @@ const HamburgerMenu = () => {
             className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14"
           />
 
-          <div className="text-2xl font-bold ffont tracking-tighter">HackTheChain3.0</div>
+          <div className="text-2xl font-bold tracking-tighter">HackTheChain3.0</div>
         </div>
 
         <button
@@ -31,9 +31,21 @@ const HamburgerMenu = () => {
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
-          <span className={`w-6 h-1 bg-white rounded-lg transition-transform ${isOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-          <span className={`w-6 h-1 bg-white rounded-lg transition-opacity ${isOpen ? "opacity-0" : ""}`}></span>
-          <span className={`w-6 h-1 bg-white rounded-lg transition-transform ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+          <span
+            className={`w-6 h-1 bg-white rounded-lg transition-transform ${
+              isOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`w-6 h-1 bg-white rounded-lg transition-opacity ${
+              isOpen ? "opacity-0" : ""
+            }`}
+          ></span>
+          <span
+            className={`w-6 h-1 bg-white rounded-lg transition-transform ${
+              isOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
         </button>
 
         <ul className="hidden md:flex space-x-6">
@@ -51,7 +63,11 @@ const HamburgerMenu = () => {
         </ul>
       </div>
 
-      <div className={`md:hidden fixed top-16 left-0 w-full bg-[#082613] text-white shadow-lg transition-transform transform ${isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`}>
+      <div
+        className={`md:hidden fixed top-16 left-0 w-full bg-[#082613] text-white shadow-lg transition-transform transform ${
+          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
+        }`}
+      >
         <ul className="flex flex-col text-center py-4 space-y-2">
           {["Home", "About", "Prizes", "Sponsors", "FAQs"].map((item) => (
             <li key={item}>

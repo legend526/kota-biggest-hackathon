@@ -37,7 +37,7 @@ const Sponsors = () => {
                     <img src="./partners/solona.png" alt="Solana Logo" />
                   </li>
                   <li className="flex items-center justify-center md:px-10">
-                    <img src="./partners/ethIndia.png" alt="DEVFOLIO LOGO" />
+                    <img src="./partners/ethIndia.png" alt="ETHINDIA LOGO" />
                   </li>
                 </ul>
               </div>
