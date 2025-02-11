@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { Menu, X, Edit3 } from "lucide-react";
 import logo from "/pictures/HTC_logo.png";
 
-
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);

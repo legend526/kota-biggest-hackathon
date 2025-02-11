@@ -1,7 +1,90 @@
+ /* @keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes revolve {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+.animate-revolve {
+  animation: revolve 10s linear infinite;
+}
+
+
+
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ .carousel-container {
+    perspective: 1000px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+  }
+  
+  .carousel-ring {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel-item {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid rgb(72, 255, 148);
+    object-fit: cover;
+  }
+  
+  .carousel-item p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+  } */
+
+
 
 
  /* Team Member Card */
- 
 .swiper-slide {
   display: flex;
   flex-direction: column;

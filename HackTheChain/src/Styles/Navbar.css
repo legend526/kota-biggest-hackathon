@@ -13,7 +13,16 @@
   font-size: 1.5rem;
 }
 
+/* Red Icon on Left */
+/* .icon {
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  border-radius: 8px;
+  flex-shrink: 0;
+} */
 
+/* Navbar Styling */
 .navbar {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65));
   font-family: "Schibsted Grotesk", serif;
