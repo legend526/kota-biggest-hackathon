@@ -9,50 +9,50 @@ const Home = () => {
   const fullText = "HaackTheChain 3.0"; // Full text to display
 
   // Sound references
-  const typingSoundRef = useRef(null);
-  const swipingSoundRef = useRef(null); // Swiping sound for card
+  // const typingSoundRef = useRef(null);
+  // const swipingSoundRef = useRef(null); // Swiping sound for card
 
-  useEffect(() => {
-    let index = 0;
-    typingSoundRef.current = new Audio("/typing.mp3"); // Adjust path if needed
-    swipingSoundRef.current = new Audio("/swipe.mp3"); // Swiping sound for card
+  // useEffect(() => {
+  //   let index = 0;
+  //   typingSoundRef.current = new Audio("/typing.mp3"); // Adjust path if needed
+  //   swipingSoundRef.current = new Audio("/swipe.mp3"); // Swiping sound for card
 
-    // Play typing sound in a loop
-    typingSoundRef.current.loop = true;
-    typingSoundRef.current.volume = 0.6;
-    typingSoundRef.current.play().catch((error) => console.error("Typing sound error:", error));
+  //   // Play typing sound in a loop
+  //   typingSoundRef.current.loop = true;
+  //   typingSoundRef.current.volume = 0.6;
+  //   typingSoundRef.current.play().catch((error) => console.error("Typing sound error:", error));
 
-    const interval = setInterval(() => {
-      if (index < fullText.length) {
-        setText((prev) => prev + fullText.charAt(index));
-        index++;
-      } else {
-        clearInterval(interval);
-        typingSoundRef.current.pause(); // Stop typing sound
-        setTypingComplete(true);
+  //   const interval = setInterval(() => {
+  //     if (index < fullText.length) {
+  //       setText((prev) => prev + fullText.charAt(index));
+  //       index++;
+  //     } else {
+  //       clearInterval(interval);
+  //       typingSoundRef.current.pause(); // Stop typing sound
+  //       setTypingComplete(true);
 
-        // Show card after typing is complete
-        setTimeout(() => {
-          setShowContent(true);
-          // Play swiping sound when the card appears
-          swipingSoundRef.current.play().catch((error) => console.error("Swiping sound error:", error));
+  //       // Show card after typing is complete
+  //       setTimeout(() => {
+  //         setShowContent(true);
+  //         // Play swiping sound when the card appears
+  //         swipingSoundRef.current.play().catch((error) => console.error("Swiping sound error:", error));
 
-          // Stop the swipe sound after 5 seconds
-          setTimeout(() => {
-            swipingSoundRef.current.pause();
-            swipingSoundRef.current.currentTime = 0; // Reset the sound to the beginning
-          }, 1500); // 5000 ms = 5 seconds
-        }, 500);
+  //         // Stop the swipe sound after 5 seconds
+  //         setTimeout(() => {
+  //           swipingSoundRef.current.pause();
+  //           swipingSoundRef.current.currentTime = 0; // Reset the sound to the beginning
+  //         }, 1500); // 5000 ms = 5 seconds
+  //       }, 500);
 
-        setTimeout(() => setTriangleVisible(true), 1000);
-      }
-    }, 150); // Typing speed in milliseconds
+  //       setTimeout(() => setTriangleVisible(true), 1000);
+  //     }
+  //   }, 150); // Typing speed in milliseconds
 
-    return () => {
-      clearInterval(interval);
-      if (typingSoundRef.current) typingSoundRef.current.pause();
-    };
-  }, []);
+  //   return () => {
+  //     clearInterval(interval);
+  //     if (typingSoundRef.current) typingSoundRef.current.pause();
+  //   };
+  // }, []);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center mb-2 bg-transparent text-white px-4 sm:px-8 min-h-screen relative">
