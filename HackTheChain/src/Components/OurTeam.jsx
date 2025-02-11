@@ -11,85 +11,93 @@ const teamData = [
     id: 1,
     name: "Dhruv Tiwari",
     imageUrl: "/pictures/dhruv.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 2,
     name: "Ashmit Singh",
     imageUrl: "/pictures/ashmit.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 3,
     name: "Ayush Kumar",
     imageUrl: "/pictures/ayushphto.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
+
   {
     id: 4,
     name: "Yash Aggarwal",
     imageUrl: "/pictures/yash.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 5,
     name: "Vinay Kumar",
     imageUrl: "/pictures/vinay.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
+
   {
     id: 6,
-    name: "Avinesh Rathore",
-    imageUrl: "/pictures/avineshboss.jpg",
-    role: "Lead Organiser",
+    name: "Dipesh Mundotiya",
+    imageUrl: "/pictures/Dipesh.jpg",
+    role: "Lead Organizer",
   },
   {
     id: 7,
-    name: "Anany Srivastava",
-    imageUrl: "/pictures/annay.jpg",
-    role: "Lead Organiser",
+    name: "Avinesh Rathore",
+    imageUrl: "/pictures/avineshboss.jpg",
+    role: "Core Team",
   },
   {
     id: 8,
-    name: "Devansh Gupta",
-    imageUrl: "/pictures/devanshboss.jpg",
-    role: "Lead Organiser",
+    name: "Anany Srivastava",
+    imageUrl: "/pictures/annay.jpg",
+    role: "Core Team",
   },
   {
     id: 9,
-    name: "Prateek Singh",
-    imageUrl: "/pictures/prateekboss.jpg",
-    role: "Lead Organiser",
+    name: "Devansh Gupta",
+    imageUrl: "/pictures/devanshboss.jpg",
+    role: "Core Team",
   },
   {
     id: 10,
-    name: "Vansh Nigam",
-    imageUrl: "/pictures/vanshboss.jpg",
-    role: "Lead Organiser",
+    name: "Prateek Singh",
+    imageUrl: "/pictures/prateekboss.jpg",
+    role: "Core Team",
   },
   {
     id: 11,
-    name: "Gopal Patidar",
-    imageUrl: "/pictures/gopalboss.jpg",
-    role: "Lead Organiser",
+    name: "Vansh Nigam",
+    imageUrl: "/pictures/vanshboss.jpg",
+    role: "Core Team",
   },
   {
     id: 12,
-    name: "Jash Parmar",
-    imageUrl: "/pictures/jashboss.jpg",
-    role: "Lead Organiser",
+    name: "Gopal Patidar",
+    imageUrl: "/pictures/gopalboss.jpg",
+    role: "Core Team",
   },
   {
     id: 13,
-    name: "Hari Om Meena",
-    imageUrl: "/pictures/hariboss.jpg",
-    role: "Lead Organiser",
+    name: "Jash Parmar",
+    imageUrl: "/pictures/jashboss.jpg",
+    role: "Core Team",
   },
   {
     id: 14,
+    name: "Hari Om Meena",
+    imageUrl: "/pictures/hariboss.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 15,
     name: "Om",
     imageUrl: "/pictures/omboss.jpg",
-    role: "Lead Organiser",
+    role: "Core Team",
   },
 ];
 
@@ -142,7 +150,7 @@ const OurTeam = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   const leadOrganisers = teamData.filter(
-    (member) => member.role === "Lead Organiser"
+    (member) => member.role === "Lead Organizer"
   );
   console.log(leadOrganisers);
   const coreTeamMembers = teamData.filter(
@@ -157,7 +165,7 @@ const OurTeam = () => {
         Our Team
       </h1>
       <TeamCarousel
-        title="Lead Organisers"
+        title="Lead Organizer"
         members={leadOrganisers}
         perview={slidesToShow}
       />
