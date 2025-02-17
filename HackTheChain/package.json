@@ -30,7 +30,6 @@
     "react-tsparticles": "^2.12.2",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.2",
-    "three": "^0.169.0",
     "tsparticles": "^3.7.1",
     "vanta": "^0.5.24"
   },
