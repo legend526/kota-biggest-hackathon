@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Domains from "./Domain";
 import BlurredSmokyCircle from "./Shadow";
+import "../Styles/About.css";
 
 const teamData = [
   { id: 1, name: "Ashmit Singh", imageUrl: "src/assets/pictures/ashmit.jpg" },
