@@ -1,5 +1,4 @@
 import iiitk from "/pictures/iiitk.png";
-import PendulumAnimation from "./PendulumAnimation";
 import "../Styles/Ending.css";
 // import logo from "../../public/pictures/HTC_logo.png";
 const Third = () => {
