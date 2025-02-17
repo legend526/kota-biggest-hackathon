@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/About.css";
 import Domains from "./Domain";
 import BlurredSmokyCircle from "./Shadow";
 
