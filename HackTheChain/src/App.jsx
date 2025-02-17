@@ -11,7 +11,6 @@ import Ending from "./Components/Ending.jsx";
 import OurTeam from './Components/OurTeam.jsx';
 import VideoBackground from "./Components/VideoBackground.jsx";
 import './App.css';
-import AnimatedTransition from './Components/AnimatedTransition';
 import HamburgerMenu from './Components/HamBurgerMenu.jsx' ;
 import ParticlesComponent from './Components/ParticleComponent.jsx';
 
