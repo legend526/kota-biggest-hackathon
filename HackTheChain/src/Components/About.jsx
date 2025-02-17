@@ -6,7 +6,7 @@ const teamData = [
   { id: 1, name: "Ashmit Singh", imageUrl: "src/assets/pictures/ashmit.jpg" },
   { id: 2, name: "Ayush Kumar", imageUrl: "src/assets/pictures/ayushphto.jpg" },
   { id: 3, name: "Dhruv Tiwari", imageUrl: "src/assets/pictures/dhruv.jpg" },
-  { id: 4, name: "Yash Aggarwal", imageUrl: "src/assets/pictures/yash.jpg" },
+  { id: 4, name: "Yash Agarwal", imageUrl: "src/assets/pictures/yash.jpg" },
   { id: 5, name: "Vinay Kumar", imageUrl: "src/assets/pictures/vinay.jpg" },
   {
     id: 6,
