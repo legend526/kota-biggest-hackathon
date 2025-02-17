@@ -27,39 +27,35 @@ function App() {
 }
 
 function ScreenOpen() {
-    const [isAnimationComplete, setIsAnimationComplete] = useState(false);
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 935);
+    // const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+    // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 935);
 
-    useEffect(() => {
-        const hasAnimationPlayed = sessionStorage.getItem("animationPlayed");
-        if (hasAnimationPlayed) {
-            setIsAnimationComplete(true);
-        }
-    }, []);
+    // useEffect(() => {
+    //     const hasAnimationPlayed = sessionStorage.getItem("animationPlayed");
+    //     if (hasAnimationPlayed) {
+    //         setIsAnimationComplete(true);
+    //     }
+    // }, []);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsSmallScreen(window.innerWidth < 935);
-        };
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setIsSmallScreen(window.innerWidth < 935);
+    //     };
+    //     window.addEventListener("resize", handleResize);
+    //     return () => window.removeEventListener("resize", handleResize);
+    // }, []);
 
-    const handleAnimationComplete = () => {
-        sessionStorage.setItem("animationPlayed", "true");
-        setIsAnimationComplete(true);
-    };
+    // const handleAnimationComplete = () => {
+    //     sessionStorage.setItem("animationPlayed", "true");
+    //     setIsAnimationComplete(true);
+    // };
 
     return (
         <div>
-            
-            {!isAnimationComplete ? (
-                <div className="text-slicer">
-                    <AnimatedTransition onAnimationComplete={handleAnimationComplete} />
-                </div>
-            ) : (
+          
                 <div className="content">
  
+
 
 
                     <VideoBackground  />
@@ -105,7 +101,7 @@ function ScreenOpen() {
                         </section>
                     </div>
                 </div>
-            )}
+
         </div>
     );
 }
