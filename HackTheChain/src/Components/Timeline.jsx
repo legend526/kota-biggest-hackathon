@@ -76,33 +76,33 @@ const Timeline = () => {
   }, [hasScrolled]);
 
   return (
-    <div>
-      <h1
-        className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white text-center mb-10 newfont"
-      >
-        Timeline
-      </h1>
+      <div>
+        <h1
+          className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white text-center mb-10 newfont"
+        >
+          Timeline
+        </h1>
 
-      <div ref={timelineRef}>
-        {timelineEvents.map((event, index) => (
-          <div key={event.id} ref={(el) => (eventRefs.current[index] = el)} className="timeline-event">
-            <div className="timeline-event-content content-font">
-              <div className="timeline-event-title text-blue-400">{event.title}</div>
-              <div className="timeline-event-date">{event.date}</div>
-              <div className="timeline-event-description">{event.description}</div>
+        <div ref={timelineRef} className='relative'>
+          {timelineEvents.map((event, index) => (
+            <div key={event.id} ref={(el) => (eventRefs.current[index] = el)} className="timeline-event">
+              <div className="timeline-event-content content-font">
+                <div className="timeline-event-title text-blue-400">{event.title}</div>
+                <div className="timeline-event-date">{event.date}</div>
+                <div className="timeline-event-description">{event.description}</div>
+              </div>
+              <div className="timeline-event-connector border-dashed"></div>
             </div>
-            <div className="timeline-event-connector border-dashed"></div>
-          </div>
-        ))}
-        <div className="progress-bar" ref={progressBarRef}>
-          <div className="colored-overlay" ref={coloredOverlayRef}>
-            <div className='timeline-logo'>
-              <div alt="progress-logo" className='progress-logo' ref={logoRef}></div>
+          ))}
+          <div className="progress-bar" ref={progressBarRef}>
+            <div className="colored-overlay" ref={coloredOverlayRef}>
+              <div className='timeline-logo'>
+                <div alt="progress-logo" className='progress-logo' ref={logoRef}></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

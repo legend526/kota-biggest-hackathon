@@ -11,7 +11,8 @@ import Ending from "./Components/Ending.jsx";
 import OurTeam from './Components/OurTeam.jsx';
 import VideoBackground from "./Components/VideoBackground.jsx";
 import './App.css';
-import HamburgerMenu from './Components/HamBurgerMenu.jsx' ;
+import HamburgerMenu from './Components/HamBurgerMenu.jsx';
+
 import ParticlesComponent from './Components/ParticleComponent.jsx';
 
 
@@ -21,14 +22,13 @@ function App() {
     return (
         <div>
             <ScreenOpen />
-            
+
         </div>
     );
 }
 
 function ScreenOpen() {
-    // const [isAnimationComplete, setIsAnimationComplete] = useState(false);
-    // const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 935);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 935);
 
     // useEffect(() => {
     //     const hasAnimationPlayed = sessionStorage.getItem("animationPlayed");
@@ -37,13 +37,13 @@ function ScreenOpen() {
     //     }
     // }, []);
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setIsSmallScreen(window.innerWidth < 935);
-    //     };
-    //     window.addEventListener("resize", handleResize);
-    //     return () => window.removeEventListener("resize", handleResize);
-    // }, []);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 935);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     // const handleAnimationComplete = () => {
     //     sessionStorage.setItem("animationPlayed", "true");
@@ -51,58 +51,52 @@ function ScreenOpen() {
     // };
 
     return (
-        <div>
-          
-                <div className="content">
- 
+            <div className="content">
+                <VideoBackground />
+
+                <ParticlesComponent id="particles" />
 
 
+                <div className="absolute opacity-40 bg-black z-1 min-h-full flex items-center justify-center w-screen">
 
-                    <VideoBackground  />
-
-                    <ParticlesComponent id = "particles"/>
-
-                    
-                    <div className="absolute opacity-40 bg-black z-1 min-h-full flex items-center justify-center w-screen">
-
-                    </div>
-                    {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
-                    <div className="overlay-content">
-
-                        <section id="home" className="home-section">
-                            <div className="home-content">
-                            <ParticlesComponent id = "particles"/>
-                                <Home />
-                            </div>
-                        </section>
-                        <section id="about-us">
-                            <About />
-                        </section>
-                        <section id="timeline">
-                            <Timeline />
-                        </section>
-                        <section id="stats">
-                            <Stats />
-                        </section>
-                        <section id="prizes">
-                            <Prizes />
-                        </section>
-                        <section id="sponsors">
-                            <Sponsors />
-                        </section>
-                        <section>
-                            <OurTeam />
-                        </section>
-                        <section id="faqs">
-                            <FAQs />
-                        </section>
-                        <section id="contact">
-                            <Ending />
-                        </section>
-                    </div>
                 </div>
+                {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
+                <div className="overlay-content">
 
-        </div>
+                    <section id="home" className="home-section">
+                        <div className="home-content">
+                            <ParticlesComponent id="particles" />
+                            <Home />
+                        </div>
+                    </section>
+                    <section id="about-us">
+                        <About />
+                    </section>
+                    <section id="timeline">
+                        <div>
+                        <Timeline />
+                        </div>
+                    </section>
+                    <section id="stats">
+                        <Stats />
+                    </section>
+                    <section id="prizes">
+                        <Prizes />
+                    </section>
+                    <section id="sponsors">
+                        <Sponsors />
+                    </section>
+                    <section>
+                        <OurTeam />
+                    </section>
+                    <section id="faqs">
+                        <FAQs />
+                    </section>
+                    <section id="contact">
+                        <Ending />
+                    </section>
+                </div>
+            </div>
     );
 }
 
