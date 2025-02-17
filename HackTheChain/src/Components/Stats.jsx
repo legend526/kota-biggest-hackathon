@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
-import "../Styles/Stats.css";
 
 function Number({ n, startAnimation }) {
   const { number } = useSpring({
