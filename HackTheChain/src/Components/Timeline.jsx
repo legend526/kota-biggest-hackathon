@@ -2,11 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/Timeline.css';
 
 const timelineEvents = [
-  { id: 1, title: "Registration", date: "12-02-2025", description: "Registration starts for HackTheChain 3.0" },
-  { id: 2, title: "Round 1 Last Date", date: "16-02-2025", description: "Submissions for Round 1 till 16 Feb 12a.m. midnight" },
-  { id: 3, title: "Round 1 Result", date: "17-02-2025", description: "Round 1 result declaration" },
-  { id: 4, title: "Round 2", date: "21-02-2025", description: "Round 2 started. Submissions till 22th of Feb 7p.m." },
-  { id: 5, title: "Final Result", date: "23-02-2025", description: "Winner Announcement and Closing Ceremony" },
+  { id: 1, title: "Round 1", date: "21-02-2025", description: "Registration starts for Round 1 HackTheChain 3.0" },
+  { id: 2, title: "Round 1 Result", date: "23-02-2025", description: "Round 1 result declaration" },
+  { id: 3, title: "Round 2", date: "23-02-2025", description: "Presentation round starts" },
+  { id: 4, title: "Final Result", date: "23-02-2025", description: "Winner Announcement and Closing Ceremony" },
 ];
 
 const findNearestEvent = (events) => {

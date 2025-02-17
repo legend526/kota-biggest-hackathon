@@ -12,8 +12,8 @@ import OurTeam from './Components/OurTeam.jsx';
 import VideoBackground from "./Components/VideoBackground.jsx";
 import './App.css';
 import HamburgerMenu from './Components/HamBurgerMenu.jsx';
-
 import ParticlesComponent from './Components/ParticleComponent.jsx';
+import Testimonial from './Components/Testimonial.jsx';
 
 
 
@@ -86,10 +86,13 @@ function ScreenOpen() {
                     <section id="sponsors">
                         <Sponsors />
                     </section>
+                    <section id="testimonials">
+                        <Testimonial />
+                    </section>
                     <section>
                         <OurTeam />
                     </section>
-                    <section id="faqs">
+                    <section id="FAQs">
                         <FAQs />
                     </section>
                     <section id="contact">

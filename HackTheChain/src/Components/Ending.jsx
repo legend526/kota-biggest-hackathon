@@ -1,5 +1,6 @@
 import iiitk from "/pictures/iiitk.png";
-// import logo from "../../public/pictures/HTC_logo.png";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 const Third = () => {
   return (
     <div className="bg-emerald-950 text-white py-10  mt-40">
