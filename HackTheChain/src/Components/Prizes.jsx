@@ -4,7 +4,7 @@ import { FaTrophy } from "react-icons/fa";
 
 const tournaments = [
   {
-    prize: 2000,
+    prize: 3000,
     title: "PRESTIGIOUS",
     places: "2nd",
     color: "bg-green-500",
@@ -22,7 +22,7 @@ const tournaments = [
     image: "/pictures/1st.png",
   },
   {
-    prize: 1000,
+    prize: 2000,
     title: "RENOWNED",
     places: "3rd",
     color: "bg-green-500",
