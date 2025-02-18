@@ -69,7 +69,7 @@ const HamburgerMenu = () => {
         }`}
       >
         <ul className="flex flex-col text-center py-4 space-y-2">
-          {["Home", "About-us", "Prizes", "Sponsors"].map((item) => (
+          {["Home", "About-us", "prizes", "sponsors"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}

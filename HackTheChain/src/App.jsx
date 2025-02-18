@@ -16,7 +16,8 @@ import ParticlesComponent from './Components/ParticleComponent.jsx';
 import Testimonial from './Components/Testimonial.jsx';
 
 
-
+import Rules from './Components/Rules.jsx';
+import Judging from './Components/Judging.jsx';
 
 function App() {
     return (
@@ -91,6 +92,8 @@ function ScreenOpen() {
                     </section>
                     <section>
                         <OurTeam />
+                        <Rules/>
+                        <Judging />
                     </section>
                     <section id="FAQs">
                         <FAQs />
