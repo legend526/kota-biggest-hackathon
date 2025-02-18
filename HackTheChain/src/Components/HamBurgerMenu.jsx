@@ -49,7 +49,7 @@ const HamburgerMenu = () => {
         </button>
 
         <ul className="hidden md:flex space-x-6">
-          {["Home", "About", "Prizes", "Sponsors", "FAQs"].map((item) => (
+          {["Home", "About", "prizes", "sponsors", "FAQs"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase()}`}
