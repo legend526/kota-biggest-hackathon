@@ -20,10 +20,10 @@ const HamburgerMenu = () => {
           <img
             src="/pictures/HTC_logo.png"
             alt="Logo"
-            className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14"
+            className="h-14 w-25 md:h-12 md:w-12 lg:h-14 lg:w-14"
           />
 
-          <div className="text-2xl font-bold tracking-tighter">HackTheChain3.0</div>
+          <div className="text-2xl font-bold tracking-tighter header">HackTheChain3.0</div>
         </div>
 
         <button
