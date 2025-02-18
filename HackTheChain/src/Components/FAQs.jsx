@@ -15,7 +15,7 @@ const faqsData = [
     id: 3,
     question:
       "What are the team size requirements for participating in HackTheChain?",
-    answer: "Teams can have 2 to 5 members.",
+    answer: "Teams can have 1 to 5 members.",
   },
   {
     id: 4,

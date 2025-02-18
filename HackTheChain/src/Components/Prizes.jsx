@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState,useRef} from "react";
 import { motion } from "framer-motion";
 import { FaTrophy } from "react-icons/fa";
 
@@ -78,6 +78,30 @@ const TournamentCard = ({ prize, title, places, color, rewards, image, brg }) =>
 };
 
 const TournamentSection = () => {
+  const [Tournaments, setTournaments] = useState(tournaments);
+
+  const swapApplied = useRef(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 781 && !swapApplied.current) {
+        setTournaments((prev) => {
+          const swapped = [...prev];
+          [swapped[0], swapped[1]] = [swapped[1], swapped[0]];
+          return swapped;
+        });
+        swapApplied.current = true;
+      } else if (window.innerWidth >= 781 && swapApplied.current) {
+        setTournaments(tournaments); 
+        swapApplied.current = false;
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-16 px-8 my-16 bg-gray-950">
       <h1 className="text-green-500 text-3xl font-bold mb-4 newfont">OUR PRIZES</h1>
@@ -86,7 +110,7 @@ const TournamentSection = () => {
       <div className="w-24 h-2 bg-gradient-to-r from-green-400 to-green-600 rounded-lg mb-24"></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {tournaments.map((tournament, index) => (
+        {Tournaments.map((tournament, index) => (
           <TournamentCard key={index} {...tournament} />
         ))}
       </div>

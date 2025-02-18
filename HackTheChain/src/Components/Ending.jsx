@@ -1,4 +1,3 @@
-import iiitk from "/pictures/iiitk.png";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Third = () => {
@@ -6,8 +5,6 @@ const Third = () => {
     <div className="bg-emerald-950 text-white py-10 mt-40">
       <div className="container mx-auto px-6 md:px-20">
         <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
-
-          {/* Logo and Description */}
           <div className="flex flex-col space-y-4">
             <div className="flex items-center">
               <div className="h-10 w-20 flex items-center justify-center rounded-lg ml-10">
@@ -37,7 +34,6 @@ const Third = () => {
             </aside>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-white font-bold text-xl mb-3 font-roboto hover:text-green-400">Quick Links</h4>
             <ul className="space-y-2 font-serif">
@@ -48,7 +44,6 @@ const Third = () => {
             </ul>
           </div>
 
-          {/* Support Links */}
           <div>
             <h4 className="text-white font-bold text-xl mb-4 font-roboto hover:text-green-400">Supports</h4>
             <ul className="space-y-2 font-serif">

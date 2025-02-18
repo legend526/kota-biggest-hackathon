@@ -8,18 +8,16 @@ export default function Navbar() {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Navigation links
   const navLinks = ["HOME", "ABOUT US", "TIMELINE", "DOMAINS", "STATS", "CONTACT"];
 
-  // Scroll effect to hide/show navbar
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY) {
-        setIsNavbarVisible(false); // Scrolling down
+        setIsNavbarVisible(false); 
       } else {
-        setIsNavbarVisible(true); // Scrolling up
+        setIsNavbarVisible(true);
       }
       setLastScrollY(currentScrollY);
     };

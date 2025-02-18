@@ -74,11 +74,11 @@ const Testimonial = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 493) {
-        setSlidesToShow(2);
+        setSlidesToShow(1);
       } else if (window.innerWidth >= 493 && window.innerWidth < 724) {
-        setSlidesToShow(3);
+        setSlidesToShow(2);
       } else {
-        setSlidesToShow(4);
+        setSlidesToShow(3);
       }
     };
 

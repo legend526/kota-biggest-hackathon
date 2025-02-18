@@ -23,7 +23,9 @@ const HamburgerMenu = () => {
             className="h-14 w-25 md:h-12 md:w-12 lg:h-14 lg:w-14"
           />
 
-          <div className="text-2xl font-bold tracking-tighter header">HackTheChain3.0</div>
+          <div className="text-2xl font-bold tracking-tighter header">
+            HackTheChain3.0
+          </div>
         </div>
 
         <button
@@ -47,39 +49,39 @@ const HamburgerMenu = () => {
             }`}
           ></span>
         </button>
-
-        <ul className="hidden md:flex space-x-6">
-          {["Home", "About", "prizes", "sponsors", "FAQs"].map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item.toLowerCase()}`}
-                className="hover:text-gray-400 transition"
-                onClick={() => scrollToSection(item.toLowerCase())}
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
       </div>
 
       <div
         className={`md:hidden fixed top-16 left-0 w-full bg-[#082613] text-white shadow-lg transition-transform transform ${
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
+          isOpen
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-full opacity-0 pointer-events-none"
         }`}
       >
         <ul className="flex flex-col text-center py-4 space-y-2">
-          {["Home", "About-us", "prizes", "sponsors"].map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item.toLowerCase()}`}
-                className="block py-2 hover:bg-green-700 transition"
-                onClick={() => scrollToSection(item.toLowerCase())}
-              >
-                {item}
-              </a>
-            </li>
-          ))}
+          {["Home", "About", "Prizes", "Sponsors", "FAQs", "Brochure"].map(
+            (item) => (
+              <li key={item}>
+                {item === "Brochure" ? (
+                  <a
+                    href="/Brochure.pdf"
+                    download="Brochure"
+                    className="hover:text-gray-400 transition"
+                  >
+                    {item}
+                  </a>
+                ) : (
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="hover:text-gray-400 transition"
+                    onClick={() => scrollToSection(item.toLowerCase())}
+                  >
+                    {item}
+                  </a>
+                )}
+              </li>
+            )
+          )}
         </ul>
       </div>
     </nav>

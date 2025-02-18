@@ -1,31 +1,27 @@
 const Sponsors = () => {
   return (
-    <section className="w-full min-h-[100vh]  overflow-x-hidden">
+    <section className="w-full overflow-x-hidden">
       <div className="text-white">
         <div className="container mx-auto py-10 px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white newfont">Sponsors</h1>
           <p className="text-gray-400 mt-5 text-lg sm:text-xl">
             Today, we bring you the opportunity to collaborate with us on our next endeavor.
-           
           </p>
 
           {/* Platinum Sponsor */}
-          <div className="grid lg:grid-cols-3 sm:grid-cols-1 mt-8 px-4">
-            <div className="max-w-6xl px-6 container text-center space-y-8">
-              <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: 'silver', fontWeight: 'bold' }}>Platinum</h2>
-              <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-5 hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)]">
-                <ul className="grid sm:grid-rows-2 gap-10 md:gap-10 items-center relative">
+          <div className="flex flex-row justify-center align-middle gap-y-5 p-10 ">
+            <div className="max-w-6xl container text-center">
+              {/* <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: 'silver', fontWeight: 'bold' }}>Platinum</h2> */}
+              <div className="w-full border p-5 flex items-center justify-center hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)]">
+                <ul className="items-center relative">
                   <li className="flex items-center justify-center md:px-10">
-                    <img className="h-20" src="./partners/DEVFOLIO.webp" alt="DEVFOLIO LOGO" />
-                  </li>
-                  <li className="flex items-center justify-center md:px-10">
-                    <img className="h-20" src="./partners/POLYGON.webp" alt="Polygon Logo" />
+                    <img className="h-20" src="./partners/koed_cover.jpg" alt="KOED LOGO" />
                   </li>
                 </ul>
               </div>
             </div>
 
-            {/* Diamond */}
+            {/* Diamond
             <div className="max-w-6xl px-6 h-6xl container text-center space-y-8">
               <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: '#009c9e', fontWeight: 'bold' }}>Diamond</h2>
               <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(176,103,255,0.6)_-50%,rgba(58,58,58,0.15)_50%)]">
@@ -41,10 +37,10 @@ const Sponsors = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             {/* Gold */}
-            <div className="max-w-6xl px-6 container text-center space-y-8">
+            {/* <div className="max-w-6xl px-6 container text-center space-y-8">
               <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: '#ccac00', fontWeight: 'bold' }}>Gold</h2>
               <div className="w-full border rounded-sm min-h-[100px] items-center justify-center p-10 hover:bg-[linear-gradient(rgba(255,63,192,0.6)_-50%,_rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid grid-rows-1 gap-10 md:gap-10 items-center relative">
@@ -59,15 +55,15 @@ const Sponsors = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Other and Campus Sponsors */}
-          <div className="flex flex-wrap gap-6 mt-10 w-full max-w-screen-md mx-auto">
+          {/* <div className="flex flex-wrap gap-6 mt-10 w-full max-w-screen-md mx-auto">
             {/* Other Sponsors */}
-            <section id="other-sponsors" className="relative section">
+            {/* <section id="other-sponsors" className="relative section"> */}
               {/* <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
               {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
-              <div className="max-w-6xl container space-y-8 flex flex-col justify-center items-center">
+              {/* <div className="max-w-6xl container space-y-8 flex flex-col justify-center items-center">
                 <div className="max-w-lg container space-y-4">
                   <h2 className="mt-6 newfont" style={{ fontSize: '40px', fontWeight: 'bold' }}>Other Sponsors</h2>
                 </div>
@@ -96,7 +92,7 @@ const Sponsors = () => {
                   </ul>
                 </div>
               </div>
-            </section>
+            </section> */}
           </div>
         </div>
       </div>
