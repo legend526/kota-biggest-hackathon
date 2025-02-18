@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -165,13 +165,13 @@ const OurTeam = () => {
         Our Team
       </h1>
       <TeamCarousel
-        title="Lead Organizer"
-        members={leadOrganisers}
+        title="Core Team Members"
+        members={coreTeamMembers}
         perview={slidesToShow}
       />
       <TeamCarousel
-        title="Core Team Members"
-        members={coreTeamMembers}
+        title="Lead Organizer"
+        members={leadOrganisers}
         perview={slidesToShow}
       />
     </div>
