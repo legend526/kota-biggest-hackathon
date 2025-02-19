@@ -18,10 +18,12 @@ import Testimonial from './Components/Testimonial.jsx';
 
 import Rules from './Components/Rules.jsx';
 import Judging from './Components/Judging.jsx';
+import ReactHelmet from './Helmet.jsx';
 
 function App() {
     return (
         <div>
+            {/* <ReactHelmet /> */}
             <ScreenOpen />
         </div>
     );
@@ -51,6 +53,8 @@ function ScreenOpen() {
     // };
 
     return (
+        <>
+        <ReactHelmet />
             <div className="content">
                 <VideoBackground />
 
@@ -102,6 +106,7 @@ function ScreenOpen() {
                     </section>
                 </div>
             </div>
+            </>
     );
 }
 
