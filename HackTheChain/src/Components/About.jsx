@@ -21,7 +21,7 @@ const Team = () => {
         The hackathon unfolds in two thrilling rounds:
         <strong className="text-green-500">{" "}Round 1 (Code Submission)</strong> is
         scheduled from February 21th to 22th, 2025, where participants will
-        submit project code, engage in quizzes, and partake in fun activities.
+        submit project code, partake in fun activities.
         The excitement peaks in <strong className="text-green-500">
         Round 2 (Final Project Showcase) </strong>
         on February 23rd, 2024, where participants will present their

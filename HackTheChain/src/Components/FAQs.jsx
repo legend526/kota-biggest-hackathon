@@ -4,7 +4,7 @@ const faqsData = [
   {
     id: 1,
     question: "When and where is HackTheChain taking place?",
-    answer: "HackTheChain is held in Kota on Feb 2024.",
+    answer: "HackTheChain is held in Kota on Feb 2025.",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const faqsData = [
   {
     id: 4,
     question: "Is there any registration fee to participate in HackTheChain?",
-    answer: "There is no registration fee for Hack-o-Fiesta.",
+    answer: "There is no registration fee for HackTheChain.",
   },
   {
     id: 5,
