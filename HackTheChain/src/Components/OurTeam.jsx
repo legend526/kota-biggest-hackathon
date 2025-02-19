@@ -53,18 +53,24 @@ const teamData = [
   },
   {
     id: 8,
-    name: "Nishika",
+    name: "Nishika Roy",
     imageUrl: "/pictures/nishika.jpg",
     role: "Core Team",
   },
   {
     id: 9,
+    name: "Harsh Raj",
+    imageUrl: "/pictures/harsh.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 16,
     name: "Avinesh Rathore",
     imageUrl: "/pictures/avineshboss.jpg",
     role: "Lead Organizer",
   },
   {
-    id: 10,
+    id: 18,
     name: "Anany Srivastava",
     imageUrl: "/pictures/annay.jpg",
     role: "Lead Organizer",
@@ -100,7 +106,7 @@ const teamData = [
     role: "Lead Organizer",
   },
   {
-    id: 16,
+    id: 10,
     name: "Hari Om Meena",
     imageUrl: "/pictures/hariboss.jpg",
     role: "Lead Organizer",
