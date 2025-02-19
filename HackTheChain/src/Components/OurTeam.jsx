@@ -11,93 +11,93 @@ const teamData = [
     id: 1,
     name: "Dhruv Tiwari",
     imageUrl: "/pictures/dhruv.jpg",
-    role: "Lead Organizer",
+    role: "Core Team",
   },
   {
     id: 2,
     name: "Ashmit Singh",
     imageUrl: "/pictures/ashmit.jpg",
-    role: "Lead Organizer",
+    role: "Core Team",
   },
   {
     id: 3,
     name: "Ayush Kumar",
     imageUrl: "/pictures/ayushphto.jpg",
-    role: "Lead Organizer",
+    role: "Core Team",
   },
 
   {
     id: 4,
     name: "Yash Aggarwal",
     imageUrl: "/pictures/yash.jpg",
-    role: "Lead Organizer",
+    role: "Core Team",
   },
   {
     id: 5,
     name: "Vinay Kumar",
     imageUrl: "/pictures/vinay.jpg",
-    role: "Lead Organizer",
+    role: "Core Team",
   },
 
   {
     id: 6,
     name: "Dipesh Mundotiya",
     imageUrl: "/pictures/Dipesh.jpg",
-    role: "Lead Organizer",
+    role: "Core Team",
   },
   {
     id: 7,
     name: "Avinesh Rathore",
     imageUrl: "/pictures/avineshboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 8,
     name: "Anany Srivastava",
     imageUrl: "/pictures/annay.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 9,
     name: "Devansh Gupta",
     imageUrl: "/pictures/devanshboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 10,
     name: "Prateek Singh",
     imageUrl: "/pictures/prateekboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 11,
     name: "Vansh Nigam",
     imageUrl: "/pictures/vanshboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 12,
     name: "Gopal Patidar",
     imageUrl: "/pictures/gopalboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 13,
     name: "Jash Parmar",
     imageUrl: "/pictures/jashboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 14,
     name: "Hari Om Meena",
     imageUrl: "/pictures/hariboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
   {
     id: 15,
     name: "Om",
     imageUrl: "/pictures/omboss.jpg",
-    role: "Core Team",
+    role: "Lead Organizer",
   },
 ];
 
@@ -165,13 +165,13 @@ const OurTeam = () => {
         Our Team
       </h1>
       <TeamCarousel
-        title="Core Team Members"
-        members={coreTeamMembers}
-        perview={slidesToShow}
-      />
-      <TeamCarousel
         title="Lead Organizer"
         members={leadOrganisers}
+        perview={slidesToShow}
+      />
+        <TeamCarousel
+        title="Core Team Members"
+        members={coreTeamMembers}
         perview={slidesToShow}
       />
     </div>
