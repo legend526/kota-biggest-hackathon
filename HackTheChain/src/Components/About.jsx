@@ -14,7 +14,7 @@ const Team = () => {
           Welcome to HackTheChain 3.0, the biggest hackathon in Kota City,
           presented by the Indian Institute of Information Technology Kota (IIIT
           Kota) in association with Codebase IIIT Kota. This hybrid event will
-          be hosted on Devfolio with a prize pool of ₹1,00,000.
+          be hosted on Unstop.
         </span>
         <br />
         <span>
