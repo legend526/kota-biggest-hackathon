@@ -68,6 +68,17 @@ export default function Navbar() {
         </a>
       </motion.button>
 
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="relative flex items-center px-4 py-2 text-sm sm:text-lg font-bold text-gray-300 bg-green-600 border-2 border-green-400 shadow-md hover:text-white hover:bg-green-700 transition duration-300 clip-hexagon"
+      >
+        <a href="/Problem_Statements.pdf" download="Problem_Statements" className="flex items-center">
+          <Edit3 className="w-5 h-5 mr-2" />
+          Problem Statements
+        </a>
+      </motion.button>
+
 
       {/* Mobile Menu Toggle */}
       <div className="md:hidden flex items-center">

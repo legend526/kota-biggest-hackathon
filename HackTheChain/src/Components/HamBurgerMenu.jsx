@@ -59,29 +59,35 @@ const HamburgerMenu = () => {
         }`}
       >
         <ul className="flex flex-col text-center py-4 space-y-2">
-          {["Home", "About", "Prizes", "Sponsors", "FAQs", "Brochure"].map(
-            (item) => (
-              <li key={item}>
-                {item === "Brochure" ? (
-                  <a
-                    href="/Brochure.pdf"
-                    download="Brochure"
-                    className="hover:text-gray-400 transition"
-                  >
-                    {item}
-                  </a>
-                ) : (
-                  <a
-                    href={`#${item.toLowerCase()}`}
-                    className="hover:text-gray-400 transition"
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                  >
-                    {item}
-                  </a>
-                )}
-              </li>
-            )
-          )}
+          {[
+            "Home",
+            "About",
+            "Prizes",
+            "Sponsors",
+            "FAQs",
+            "Brochure",
+            "Problem_Statements",
+          ].map((item) => (
+            <li key={item}>
+              {item === "Brochure" || item === "Problem_Statements" ? (
+                <a
+                  href={`/${item.replace(" ", "")}.pdf`}
+                  download={item}
+                  className="hover:text-gray-400 transition"
+                >
+                  {item}
+                </a>
+              ) : (
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="hover:text-gray-400 transition"
+                  onClick={() => scrollToSection(item.toLowerCase())}
+                >
+                  {item}
+                </a>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
